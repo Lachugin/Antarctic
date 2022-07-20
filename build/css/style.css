@@ -445,7 +445,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #F9FBFD;
 }
 
 a {
@@ -840,6 +840,44 @@ button,
 
 .nav__item:last-child a {
   margin-right: 0;
+}
+
+.journey {
+  background: #F9FBFD;
+  padding: 120px 0;
+}
+
+.journey .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.journey__info {
+  max-width: 512px;
+}
+
+.journey__info h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.journey__info p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.journey__img {
+  max-width: 560px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

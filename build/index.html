@@ -1,95 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a class="logo">
+            <svg width="70" height="38">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">Преимущества</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Направления</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Ближайшие круизы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__inner">
+        <h1>Круизы в Антарктику</h1>
+        <p>Волшебный мир айсбергов и пингвинов</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="journey">
       <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo">
-            <a class="logo">
-              <svg width="70" height="38">
-                <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        <div class="journey__info">
+          <h2>Путешествие на край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
+            лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+            китов, морских котиков и многое другое.</p>
+        </div>
+        <div class="journey__img">
+          <img src="img/journey.jpg" width="560" height="301" alt="На фотографии три пингвина">
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__wrapper">
+          <h2>Преимущества</h2>
+          <ul class="advantage__list">
+            <li class="advantage__item">
+              <svg width="27" height="32">
+                <use xlink:href="img/sprite/sprite.svg#ship"></use>
               </svg>
-            </a>
-          </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#">Преимущества</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Направления</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Ближайшие круизы</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__inner">
-          <h1>Круизы в Антарктику</h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+              <h3>Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
+                возможность насладиться видами и природой.</p>
+            </li>
+            <li class="advantage__item">
+              <svg width="38" height="21">
+                <use xlink:href="img/sprite/sprite.svg#birdie"></use>
+              </svg>
+              <h3>Система все включено</h3>
+              <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для
+                вас 24 часа.</p>
+            </li>
+            <li class="advantage__item">
+              <svg width="42" height="15">
+                <use xlink:href="img/sprite/sprite.svg#boat"></use>
+              </svg>
+              <h3>Экскурсионные туры на Zodiac</h3>
+              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+                опытных экскурсоводов.</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="journey">
-        <div class="container">
-          <div class="journey__info">
-            <h2>Путешествие на край Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-          </div>
-          <div class="journey__img">
-            <img src="img/journey.jpg" width="560" height="301" alt="На фотографии три пингвина">
-          </div>
-        </div>
-      </section>
-      <section class="advantage">
-        <div class="container">
-
-        </div>
-      </section>
-    </main>
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+    </section>
+  </main>
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

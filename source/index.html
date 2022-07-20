@@ -9,29 +9,42 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <svg>
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-            <h1>Тестовая страница.1</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a class="logo">
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">Преимущества</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Ближайшие круизы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__inner">
+          <h1>Круизы в Антарктику</h1>
+          <p>Волшебный мир айсбергов и пингвинов</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="journey"></section>
+    </main>
     <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">

@@ -945,6 +945,127 @@ button,
   color: #011C40;
 }
 
+.cruises {
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.cruises h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  color: #011C40;
+}
+
+.cruises__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.cruises__item {
+  width: 260px;
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.cruises__img img {
+  width: 260px;
+  height: 386px;
+}
+
+.cruises__card {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 85%;
+  padding: 25px 25px;
+  background: none;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cruises__card--active {
+  top: 0;
+  background: #011C40;
+}
+
+.cruises__item:hover .cruises__card {
+  top: 0%;
+  background: #011C40;
+}
+
+.cruises__card h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.cruises__card h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+}
+
+.cruises__card p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #D8D8D9;
+}
+
+.cruises__card a {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding: 14px 46px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011C40;
+  background: #F9FBFD;
+  cursor: pointer;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {

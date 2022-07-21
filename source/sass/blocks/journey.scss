@@ -1,0 +1,34 @@
+.journey {
+  background: #F9FBFD;
+  padding: 120px 0;
+}
+
+.journey .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.journey__info {
+  max-width: 512px;
+  margin-top: 35px;
+}
+
+.journey__info h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-basic-black;
+}
+
+.journey__info p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-basic-black;
+}
+
+.journey__img {
+  max-width: 560px;
+}

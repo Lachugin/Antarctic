@@ -1,0 +1,19 @@
+.footer__wrapper {
+  padding: 50px 103px;
+  background: #011C40;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  column-gap: 28px;
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
+}

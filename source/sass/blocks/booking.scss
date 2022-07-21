@@ -1,0 +1,31 @@
+.booking {
+  background: url("../img/booking.jpg") center (center/cover) no-repeat cornflowerblue;
+  min-height: 550px;
+}
+
+.booking__wrapper {
+  padding: 40px 163px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.booking__inner h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.booking__inner p {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+}

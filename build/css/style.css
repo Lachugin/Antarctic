@@ -922,6 +922,7 @@ button,
   max-width: 360px;
   background: #F9FBFD;
   margin-right: 40px;
+  min-height: 241px;
 }
 
 .advantage__item:last-child {

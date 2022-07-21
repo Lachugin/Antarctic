@@ -1,0 +1,30 @@
+.contacts__wrapper {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
+
+.contacts__info {
+  max-width: 500px;
+}
+
+.contacts__info p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.contacts__info a {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 33px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+}

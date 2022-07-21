@@ -1,5 +1,5 @@
 .header {
-  background: url("../img/header/antarctir-gb.jpg") center (center/cover) no-repeat cornflowerblue;
+  background: url("../img/header/antarctir-gb.png") center (center/cover) no-repeat cornflowerblue;
   min-height: 650px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -12,10 +12,12 @@
 }
 
 .header__inner {
-  margin-top: 223px;
+  margin-top: 190px;
+  margin-left: 96px;
 }
 
 .header__inner h1 {
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
@@ -25,6 +27,8 @@
 }
 
 .header__inner p {
+  margin: 0;
+  margin-top: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

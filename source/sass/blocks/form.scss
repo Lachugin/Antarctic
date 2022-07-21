@@ -7,11 +7,12 @@
 }
 
 .form h3 {
+  margin: 0;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
   color: #F9FBFD;
 }
 
@@ -19,7 +20,7 @@
   min-width: 303px;
   border: none;
   padding: 11px 0 11px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form__checkbox {

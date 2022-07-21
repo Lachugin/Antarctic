@@ -776,7 +776,7 @@ button,
 }
 
 .header {
-  background: url("../img/header/antarctir-gb.jpg") center center/cover no-repeat cornflowerblue;
+  background: url("../img/header/antarctir-gb.png") center center/cover no-repeat cornflowerblue;
   min-height: 650px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -796,10 +796,12 @@ button,
 }
 
 .header__inner {
-  margin-top: 223px;
+  margin-top: 190px;
+  margin-left: 96px;
 }
 
 .header__inner h1 {
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
@@ -809,6 +811,8 @@ button,
 }
 
 .header__inner p {
+  margin: 0;
+  margin-top: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -858,6 +862,7 @@ button,
 
 .journey__info {
   max-width: 512px;
+  margin-top: 35px;
 }
 
 .journey__info h2 {
@@ -886,7 +891,7 @@ button,
 }
 
 .advantage__wrapper {
-  padding: 120px 0;
+  padding: 110px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,9 +906,18 @@ button,
   flex-wrap: wrap;
 }
 
+.advantage__wrapper h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+}
+
 .advantage__list {
   margin: 0;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -918,9 +932,10 @@ button,
 }
 
 .advantage__item {
-  padding: 35px 30px;
+  padding: 25px 30px;
+  margin-top: 10px;
   max-width: 360px;
-  background: #F9FBFD;
+  background: #f9fbfd;
   margin-right: 40px;
   min-height: 241px;
 }
@@ -946,11 +961,12 @@ button,
 }
 
 .cruises {
-  padding: 120px 0;
+  padding: 110px 0;
   margin: 0 auto;
 }
 
 .cruises h2 {
+  margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -961,6 +977,7 @@ button,
 
 .cruises__list {
   margin: 0;
+  margin-top: 35px;
   padding: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -989,7 +1006,7 @@ button,
   width: 260px;
   position: relative;
   overflow: hidden;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .cruises__img img {
@@ -1002,7 +1019,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  top: 85%;
+  top: 80%;
   padding: 25px 25px;
   background: none;
   -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
@@ -1068,11 +1085,11 @@ button,
 
 .booking {
   background: url("../img/booking.jpg") center center/cover no-repeat cornflowerblue;
-  min-height: 555px;
+  min-height: 550px;
 }
 
 .booking__wrapper {
-  padding: 50px 163px;
+  padding: 40px 163px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1089,6 +1106,8 @@ button,
 }
 
 .booking__inner h2 {
+  margin: 0;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -1097,6 +1116,7 @@ button,
 }
 
 .booking__inner p {
+  margin-top: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1114,11 +1134,12 @@ button,
 }
 
 .form h3 {
+  margin: 0;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
   color: #F9FBFD;
 }
 
@@ -1126,7 +1147,7 @@ button,
   min-width: 303px;
   border: none;
   padding: 11px 0 11px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form__checkbox {
@@ -1202,10 +1223,13 @@ button,
 }
 
 .contacts__info {
+  margin-top: 0px;
   max-width: 500px;
 }
 
 .contacts__info p {
+  margin: 40px 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1214,6 +1238,7 @@ button,
 }
 
 .contacts__info a {
+  margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1223,12 +1248,48 @@ button,
   -webkit-column-gap: 5px;
   -moz-column-gap: 5px;
   column-gap: 5px;
-  margin-bottom: 33px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 150%;
   color: #011C40;
+}
+
+.footer__wrapper {
+  padding: 50px 103px;
+  background: #011C40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1245,23 +1306,7 @@ button,
   }
 }
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
-}
-
 @media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .modal__wrapper {
     padding: 60px 16px;
   }

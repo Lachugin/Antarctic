@@ -6,10 +6,13 @@
 }
 
 .contacts__info {
+  margin-top: 0px;
   max-width: 500px;
 }
 
 .contacts__info p {
+  margin: 40px 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -18,13 +21,13 @@
 }
 
 .contacts__info a {
+  margin: 25px 0;
   display: flex;
   align-items: center;
   column-gap: 5px;
-  margin-bottom: 33px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 150%;
   color: #011C40;
 }

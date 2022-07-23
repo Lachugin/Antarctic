@@ -1,14 +1,28 @@
 .booking {
-  background: url("../img/booking.jpg") center (center/cover) no-repeat cornflowerblue;
+  background: url("../img/booking.jpg") center (center/cover) no-repeat;
   min-height: 550px;
+
+  @media (max-width: 768px) {
+    min-height: 805px;
+  }
 }
 
 .booking__wrapper {
-  padding: 40px 163px;
+  padding: 40px 60px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    padding-top: 90px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 320px) {
+    padding: 40px 15px;
+  }
 }
 
 .booking__inner h2 {
@@ -18,7 +32,12 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    font-size: 34px;
+    margin-bottom: 0;
+  }
 }
 
 .booking__inner p {
@@ -28,4 +47,8 @@
   font-size: 18px;
   line-height: 150%;
   color: #011C40;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }

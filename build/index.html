@@ -14,14 +14,16 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <div class="header__logo">
-          <a class="logo">
-            <svg width="70" height="38">
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
-        </div>
         <nav class="nav">
+          <div class="header__logo">
+            <a class="logo">
+              <svg width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z" fill="#011C40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z" fill="#011C40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z" fill="#011C40"/>
+                </svg>
+            </a>
+          </div>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#">Преимущества</a>
@@ -36,11 +38,14 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+          <button class="header__btn">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
       </div>
       <div class="header__inner">
-        <h1>Круизы в Антарктику</h1>
-        <p>Волшебный мир айсбергов и пингвинов</p>
+        <h1>Круизы в&nbsp;Антарктику</h1>
+        <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
       </div>
     </div>
   </header>
@@ -54,11 +59,15 @@
             китов, морских котиков и многое другое.</p>
         </div>
         <div class="journey__img">
-          <img src="img/journey.jpg" width="560" height="301" alt="На фотографии три пингвина">
+          <picture>
+            <source media="(max-width: 768px)"
+              srcset="img/journey-tablet.webp 1x, img/journey-tablet@2.webp 2x">
+              <img src="img/journey.jpg" srcset="img/journey@2.jpg 2x"  alt="На фотографии три пингвина">
+          </picture>
         </div>
       </div>
     </section>
-    <section class="advantage">
+    <!-- <section class="advantage">
       <div class="container">
         <div class="advantage__wrapper">
           <h2>Преимущества</h2>
@@ -68,23 +77,23 @@
                 <use xlink:href="img/sprite/sprite.svg#ship"></use>
               </svg>
               <h3>Небольшой круизный лайнер</h3>
-              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
-                возможность насладиться видами и природой.</p>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
+                возможность насладиться видами и&nbsp;природой.</p>
             </li>
             <li class="advantage__item">
               <svg width="38" height="21">
                 <use xlink:href="img/sprite/sprite.svg#birdie"></use>
               </svg>
               <h3>Система все включено</h3>
-              <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для
-                вас 24 часа.</p>
+              <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для
+                вас 24&nbsp;часа.</p>
             </li>
             <li class="advantage__item">
               <svg width="42" height="15">
                 <use xlink:href="img/sprite/sprite.svg#boat"></use>
               </svg>
-              <h3>Экскурсионные туры на Zodiac</h3>
-              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac в&nbsp;сопровождении
                 опытных экскурсоводов.</p>
             </li>
           </ul>
@@ -235,42 +244,49 @@
       </div>
     </section>
     <section class="booking">
-      <div class="booking__wrapper">
-        <div class="booking__inner">
-          <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за 3-6 месяцев<br>до даты выезда и сэкономьте до 50%</p>
-        </div>
-        <div class="booking__form">
-          <form class="form" action="#" method="get">
-            <fieldset>
-              <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
-              <label for="name">
-                <input type="text" placeholder="Имя">
-              </label>
-              <label for="phone">
-                <input type="tel" placeholder="Телефон">
-              </label>
-              <label for="email">
-                <input type="email" placeholder="Email">
-              </label>
-              <label class="form__checkbox">
-                <span>Я согласен на обработку моих персональных данных</span>
-                <input type="checkbox" name="checkbox">
-              </label>
-              <button class="form__btn" type="submit">Оставить заявку</button>
-            </fieldset>
-          </form>
+      <div class="container">
+        <div class="booking__wrapper">
+          <div class="booking__inner">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за 3-6 месяцев<br>до даты выезда и сэкономьте до 50%</p>
+          </div>
+          <div class="booking__form">
+            <form class="form" action="#" method="get">
+              <fieldset>
+                <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <label for="name">
+                  <input type="text" placeholder="Имя">
+                </label>
+                <label for="phone">
+                  <input type="tel" placeholder="Телефон">
+                </label>
+                <label for="email">
+                  <input type="email" placeholder="Email">
+                </label>
+                <label class="form__checkbox">
+                  <span>Я согласен на обработку моих персональных данных</span>
+                  <input type="checkbox" name="checkbox">
+                </label>
+                <button class="form__btn" type="submit">Оставить заявку</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </div>
+
     </section>
     <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__maps">
-            <img src="img/img-map.jpg" width="560" height="306" alt="Карта">
+            <picture>
+              <source media="(max-width: 768px)"
+                srcset="img/img-map-tablet.webp 1x, img/img-map-tablet@2.webp 2x">
+                <img src="img/img-map.jpg" srcset="img/img-map@2.jpg 2x"  alt="Карта">
+            </picture>
           </div>
           <div class="contacts__info">
-            <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+            <h2>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
             <a href="#">
               <svg width="18" height="22">
                 <use xlink:href="img/sprite/sprite.svg#marker"></use>
@@ -286,59 +302,62 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__logo">
-        <a class="logo">
-          <svg width="70" height="38">
-            <use xlink:href="img/sprite/sprite.svg#logo"></use>
-          </svg>
-        </a>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a class="logo">
+            <svg width="70" height="38">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">Преимущества</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Ближайшие круизы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">
+              <svg width="11" height="20">
+                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <svg width="20" height="17">
+                <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="footer__nav">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#">Преимущества</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Направления</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Ближайшие круизы</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#">
-            <svg width="11" height="20">
-              <use xlink:href="img/sprite/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#">
-            <svg width="20" height="20">
-              <use xlink:href="img/sprite/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#">
-            <svg width="20" height="17">
-              <use xlink:href="img/sprite/sprite.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
+
   </footer>
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">

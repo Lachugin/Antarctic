@@ -1,29 +1,65 @@
 .header {
-  background: url("../img/header/antarctir-gb.png") center (center/cover) no-repeat cornflowerblue;
-  min-height: 650px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: url("../img/header/modile.png") center (center/cover) no-repeat;
+  height: 500px;
+
+  @media (min-width: 768px) {
+    background: url("../img/header/tablet.png") center (center/cover) no-repeat;
+    min-height: 638px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/tablet@2.png");
+    }
+  }
+
+  @media (min-width: 1366px) {
+    background: url("../img/header/desktop.png") center (center/cover) no-repeat;
+    min-height: 650px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/desktop@2.png");
+    }
+  }
 }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 35px;
+.header .container {
+  padding: 0;
 }
+
 
 .header__inner {
-  margin-top: 190px;
-  margin-left: 96px;
+  margin-top: 115px;
+  margin-left: 15px;
+
+  @media (min-width: 768px) {
+    margin-left: 45px;
+    margin-top: 185px;
+  }
+
+  @media (min-width: 1366px) {
+    margin-left: 198px;
+    margin-top: 165px;
+  }
 }
 
 .header__inner h1 {
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
+  font-size: 36px;
+  line-height: 125%;
   color: $color-basic-white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 54px;
+    line-height: 66px;
+  }
 }
 
 .header__inner p {
@@ -31,8 +67,48 @@
   margin-top: 15px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 140%;
   color: $color-basic-white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.header__btn--close {
+  border: none;
+  background: url("../img/svg/close.svg") center (center/cover) no-repeat;
+  width: 13px;
+  height: 13px;
+  justify-self: end;
+  align-self: center;
+}
+
+.header__logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.header__btn {
+  border: none;
+  background: url("../img/svg/open.svg") center (center/cover) no-repeat;
+  width: 24px;
+  height: 14px;
+  justify-self: end;
+  align-self: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
 }

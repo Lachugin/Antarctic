@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+}
+
+.logo--close svg path {
+  @media (max-width: 768px) {
+    fill: $color-basic-black;
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.logo svg path {
+  fill: $color-basic-white;
+
+  @media (min-width: 768px) {
+    fill: $color-basic-white;
+  }
+}
+
+.logo svg {
+
+  @media (min-width: 1366px) {
+    fill: $color-basic-white;
+    width: 70px;
+    height: 38px;
+  }
+}
+
+

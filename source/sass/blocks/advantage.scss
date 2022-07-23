@@ -1,5 +1,5 @@
 .advantage {
-  background: url("../img/advantage.jpg") center (center/cover) no-repeat cornflowerblue;
+  background: url("../img/advantage.jpg") center (center/cover) no-repeat;
   min-height: 562px;
 }
 
@@ -9,6 +9,10 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 }
 
 .advantage__wrapper h2 {
@@ -17,7 +21,11 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 }
 
 .advantage__list {
@@ -27,16 +35,33 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 766px) {
+    flex-wrap: wrap;
+  }
 }
 
 .advantage__item {
+  box-sizing: border-box;
   padding: 25px 30px;
   margin-top: 10px;
   max-width: 360px;
   background: #f9fbfd;
   margin-right: 40px;
   min-height: 241px;
+
+  @media (max-width: 768px) {
+    max-width: 206px;
+    margin-top: 0;
+    margin-right: 30px;
+    padding: 25px 20px;
+    padding-right: 0;
+  }
 }
 
 .advantage__item:last-child {
@@ -49,6 +74,12 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    line-height: 140%;
+    margin: 20px 0;
+    margin-top: 10px;
+  }
 }
 
 .advantage__item p {
@@ -57,4 +88,9 @@
   font-size: 14px;
   line-height: 140%;
   color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding-right: 19px;
+  }
 }

@@ -3,21 +3,34 @@
   display: flex;
   align-items: center;
   column-gap: 100px;
+
+  @media (max-width: 768px) {
+    column-gap: 30px;
+    padding: 100px 0;
+  }
 }
 
 .contacts__info {
   margin-top: 0px;
   max-width: 500px;
+
+  @media (max-width: 768px) {
+    max-width: 324px;
+  }
 }
 
-.contacts__info p {
+.contacts__info h2 {
   margin: 40px 0;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
 }
 
 .contacts__info a {
@@ -29,5 +42,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: $color-basic-black;
 }

@@ -1,6 +1,6 @@
 .booking {
   background: url("../img/booking.jpg") center (center/cover) no-repeat;
-  min-height: 550px;
+  min-height: 760px;
 
   @media (max-width: 768px) {
     min-height: 805px;
@@ -8,19 +8,19 @@
 }
 
 .booking__wrapper {
-  padding: 40px 60px;
+  padding: 65px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     padding-top: 90px;
     flex-direction: column;
   }
 
-  @media (min-width: 320px) {
+  @media (min-width: 1366px) {
     padding: 40px 15px;
   }
 }
@@ -30,25 +30,26 @@
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 150%;
+  font-size: 24px;
+  line-height: 130%;
   color: $color-basic-black;
+  text-align: center;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 34px;
     margin-bottom: 0;
   }
 }
 
 .booking__inner p {
-  margin-top: 5px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: #011C40;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-basic-black;
+  text-align: center;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     text-align: center;
   }
 }

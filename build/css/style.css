@@ -636,7 +636,7 @@ button,
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 15px;
 }
 
 .btn {
@@ -908,7 +908,8 @@ button,
 
 .journey {
   background: #F9FBFD;
-  padding: 120px 0;
+  padding: 0;
+  padding-bottom: 65px;
 }
 
 .journey .container {
@@ -918,21 +919,27 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-column-gap: 88px;
-  -moz-column-gap: 88px;
-  column-gap: 88px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .journey__info {
-  width: 50%;
   margin-top: 35px;
+  max-width: 290px;
 }
 
 .journey__info h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  line-height: 150%;
+  font-size: 24px;
+  line-height: 140%;
   color: #011C40;
 }
 
@@ -942,6 +949,7 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #011C40;
+  padding-bottom: 15px;
 }
 
 .advantage {
@@ -950,7 +958,6 @@ button,
 }
 
 .advantage__wrapper {
-  padding: 110px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,20 +970,22 @@ button,
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 55px 0;
+  padding-bottom: 0;
 }
 
 .advantage__wrapper h2 {
   margin: 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 150%;
   color: #011C40;
 }
 
 .advantage__list {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 32px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -986,16 +995,17 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .advantage__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 25px 30px;
-  margin-top: 10px;
+  padding: 20px 15px;
+  margin-bottom: 30px;
   max-width: 360px;
   background: #f9fbfd;
-  margin-right: 40px;
   min-height: 241px;
 }
 
@@ -1007,7 +1017,7 @@ button,
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 140%;
   color: #011C40;
 }
 
@@ -1020,15 +1030,14 @@ button,
 }
 
 .cruises {
-  padding: 110px 0;
+  padding: 40px 0;
   margin: 0 auto;
 }
 
 .cruises h2 {
-  margin: 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 150%;
   text-align: center;
   color: #011C40;
@@ -1036,7 +1045,6 @@ button,
 
 .cruises__list {
   margin: 0;
-  margin-top: 35px;
   padding: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -1062,7 +1070,7 @@ button,
 }
 
 .cruises__item {
-  width: 260px;
+  width: 270px;
   position: relative;
   overflow: hidden;
   margin: 15px 0;
@@ -1146,11 +1154,11 @@ button,
 
 .booking {
   background: url("../img/booking.jpg") center center/cover no-repeat;
-  min-height: 550px;
+  min-height: 760px;
 }
 
 .booking__wrapper {
-  padding: 40px 60px;
+  padding: 65px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,29 +1181,31 @@ button,
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 150%;
+  font-size: 24px;
+  line-height: 130%;
   color: #011C40;
+  text-align: center;
 }
 
 .booking__inner p {
-  margin-top: 5px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 140%;
   color: #011C40;
+  text-align: center;
 }
 
 .form fieldset {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
-  max-width: 403px;
   background: #011C40;
   -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  padding: 50px;
+  padding: 25px;
+  padding-top: 30px;
+  margin-top: 15px;
 }
 
 .form h3 {
@@ -1206,6 +1216,7 @@ button,
   font-size: 18px;
   line-height: 150%;
   color: #F9FBFD;
+  text-align: center;
 }
 
 .form input {
@@ -1213,27 +1224,6 @@ button,
   border: none;
   padding: 11px 0 11px 16px;
   margin-bottom: 25px;
-}
-
-.form__checkbox {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .form__checkbox span {
@@ -1251,10 +1241,6 @@ button,
 
 .form__checkbox input {
   margin: 0;
-  margin-right: 10px;
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content;
 }
 
 .form__btn {
@@ -1264,7 +1250,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   border: none;
-  padding: 15px 89px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1385,13 +1370,18 @@ button,
   }
 }
 
-@media (min-width: 320px) {
-  .booking__wrapper {
-    padding: 40px 15px;
+@media (min-width: 766px) {
+  .advantage__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding: 0 45px;
+  }
+
   .header {
     background: url("../img/header/tablet.png") center center/cover no-repeat;
     min-height: 638px;
@@ -1444,6 +1434,87 @@ button,
     margin-right: 23px;
   }
 
+  .journey {
+    padding: 60px 0;
+  }
+
+  .journey__info {
+    max-width: 324px;
+  }
+
+  .journey__info h2 {
+    margin: 0;
+    max-width: 205px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  .advantage__wrapper {
+    padding: 80px 0;
+  }
+
+  .advantage__wrapper h2 {
+    font-size: 26px;
+  }
+
+  .advantage__list {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+
+  .advantage__item {
+    max-width: 206px;
+    margin-top: 0;
+    margin-right: 30px;
+    padding: 30px 0 0px 20px;
+  }
+
+  .advantage__item h3 {
+    line-height: 150%;
+    margin: 10px 0 20px;
+  }
+
+  .advantage__item p {
+    margin: 0;
+    padding-right: 19px;
+  }
+
+  .cruises {
+    padding: 90px 0;
+  }
+
+  .cruises h2 {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .cruises__list {
+    padding-top: 30px;
+  }
+
+  .cruises__item {
+    width: 309px;
+  }
+
+  .booking__wrapper {
+    padding-top: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .booking__inner h2 {
+    font-size: 34px;
+    margin-bottom: 0;
+  }
+
+  .booking__inner p {
+    text-align: center;
+  }
+
   .logo svg path {
     fill: #F9FBFD;
   }
@@ -1456,6 +1527,10 @@ button,
 }
 
 @media (min-width: 1366px) {
+  .container {
+    padding: 0 103px;
+  }
+
   .header {
     background: url("../img/header/desktop.png") center center/cover no-repeat;
     min-height: 650px;
@@ -1486,6 +1561,62 @@ button,
     margin-right: 33px;
   }
 
+  .journey {
+    padding: 120px 0;
+  }
+
+  .journey__info {
+    max-width: 512px;
+  }
+
+  .journey__info h2 {
+    margin: 0;
+    max-width: 430px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  .advantage__wrapper {
+    padding: 110px 0;
+    padding-bottom: 75px;
+  }
+
+  .advantage__wrapper h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  .advantage__item {
+    padding: 25px 30px;
+    margin-top: 10px;
+    max-width: 360px;
+    background: #f9fbfd;
+    margin-right: 40px;
+  }
+
+  .cruises {
+    padding: 110px 0;
+  }
+
+  .cruises h2 {
+    font-size: 28px;
+  }
+
+  .cruises__item {
+    width: 260px;
+  }
+
+  .cruises__img img {
+    height: 386px;
+  }
+
+  .booking__wrapper {
+    padding: 40px 15px;
+  }
+
   .logo svg {
     fill: #F9FBFD;
     width: 70px;
@@ -1500,102 +1631,8 @@ button,
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 45px;
-  }
-
-  .journey {
-    padding: 100px 0;
-    padding-bottom: 75px;
-  }
-
-  .journey .container {
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
-
-  .journey__info {
-    margin-top: 0;
-  }
-
-  .journey__info h2 {
-    margin: 0;
-    max-width: 205px;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 140%;
-  }
-
-  .advantage__wrapper {
-    padding: 80px 0;
-  }
-
-  .advantage__wrapper h2 {
-    font-size: 26px;
-  }
-
-  .advantage__list {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    margin-top: 50px;
-  }
-
-  .advantage__item {
-    max-width: 206px;
-    margin-top: 0;
-    margin-right: 30px;
-    padding: 25px 20px;
-    padding-right: 0;
-  }
-
-  .advantage__item h3 {
-    line-height: 140%;
-    margin: 20px 0;
-    margin-top: 10px;
-  }
-
-  .advantage__item p {
-    margin: 0;
-    padding-right: 19px;
-  }
-
-  .cruises {
-    padding: 90px 0;
-  }
-
-  .cruises h2 {
-    font-size: 26px;
-  }
-
-  .cruises__item {
-    width: 309px;
-  }
-
   .booking {
     min-height: 805px;
-  }
-
-  .booking__wrapper {
-    padding-top: 90px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .booking__inner h2 {
-    font-size: 34px;
-    margin-bottom: 0;
-  }
-
-  .booking__inner p {
-    text-align: center;
-  }
-
-  .form fieldset {
-    margin-top: 30px;
-    padding-bottom: 40px;
   }
 
   .contacts__wrapper {
@@ -1654,10 +1691,6 @@ button,
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 15px;
-  }
-
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1669,18 +1702,5 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
-  }
-}
-
-@media (max-width: 766px) {
-  .advantage__list {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .form fieldset {
-    margin: 0;
-    padding: 20px;
-    max-width: 290px;
   }
 }

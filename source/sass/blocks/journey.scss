@@ -1,46 +1,64 @@
 .journey {
   background: $color-basic-white;
-  padding: 120px 0;
+  padding: 0;
+  padding-bottom: 65px;
 
-  @media (max-width: 768px) {
-    padding: 100px 0;
-    padding-bottom: 75px;
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 120px 0;
   }
 }
 
 .journey .container {
   display: flex;
   justify-content: space-between;
-  column-gap: 88px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 
-  @media (max-width: 768px) {
-    column-gap: 30px;
+  @media (min-width: 768px) {
   }
 }
 
 .journey__info {
-  width: 50%;
   margin-top: 35px;
+  max-width: 290px;
 
-  @media (max-width: 768px) {
-    margin-top: 0;
+  @media (min-width: 768px) {
+    max-width: 324px;
+  }
+
+  @media (min-width: 1366px) {
+    max-width: 512px;
   }
 }
 
 .journey__info h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  line-height: 150%;
+  font-size: 24px;
+  line-height: 140%;
   color: $color-basic-black;
 
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     margin: 0;
     max-width: 205px;
     font-weight: 600;
     font-size: 26px;
     line-height: 140%;
+  }
+
+  @media (min-width: 1366px) {
+    margin: 0;
+    max-width: 430px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
   }
 }
 
@@ -50,8 +68,10 @@
   font-size: 16px;
   line-height: 150%;
   color: $color-basic-black;
+  padding-bottom: 15px;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
 
   }
 }
+

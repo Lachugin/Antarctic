@@ -1,12 +1,26 @@
 .contacts__wrapper {
-  padding: 120px 0;
-  display: flex;
+  padding: 18px 0 80px;
+  display: grid;
   align-items: center;
-  column-gap: 100px;
+  grid-template-columns: 1fr;
 
-  @media (max-width: 768px) {
-    column-gap: 30px;
-    padding: 100px 0;
+  @media (min-width: 768px) {
+    padding: 94px 0;
+    column-gap: 33px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 122px 0;
+    column-gap: 100px;
+  }
+}
+
+.contacts__maps {
+  order: 2;
+  margin-top: 10px;
+
+  @media (min-width: 768px) {
   }
 }
 
@@ -14,8 +28,9 @@
   margin-top: 0px;
   max-width: 500px;
 
-  @media (max-width: 768px) {
-    max-width: 324px;
+  @media (min-width: 768px) {
+    justify-self: end;
+    order: 3;
   }
 }
 
@@ -28,7 +43,7 @@
   line-height: 150%;
   color: $color-basic-black;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     margin: 20px 0;
   }
 }

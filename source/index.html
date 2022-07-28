@@ -267,10 +267,10 @@
                 <label for="email">
                   <input type="email" placeholder="Email">
                 </label>
-                <label class="form__checkbox">
-                  <span>Я согласен на обработку моих персональных данных</span>
-                  <input type="checkbox" name="checkbox">
-                </label>
+                <div class="form__checkbox-box">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="checkbox" id="personal-data">
+                  <label class="form__checkbox" for="personal-data">Я согласен на обработку моих персональных данных</label>
+                </div>
                 <button class="form__btn" type="submit">Оставить заявку</button>
               </fieldset>
             </form>
@@ -319,22 +319,20 @@
           </a>
         </div>
         <div class="footer__nav">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
                 <a href="#">Преимущества</a>
               </li>
-              <li class="nav__item">
+              <li class="footer__nav-item">
                 <a href="#">Направления</a>
               </li>
-              <li class="nav__item">
+              <li class="footer__nav-item">
                 <a href="#">Ближайшие круизы</a>
               </li>
-              <li class="nav__item">
+              <li class="footer__nav-item">
                 <a href="#">Контакты</a>
               </li>
             </ul>
-          </nav>
         </div>
         <ul class="footer__list">
           <li class="footer__item">

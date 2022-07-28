@@ -2,7 +2,7 @@
   box-sizing: border-box;
   border: none;
   background: $color-basic-black;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   padding: 30px 25px 40px;
   margin-top: 15px;
   width: 100%;
@@ -53,7 +53,7 @@ fieldset input {
   line-height: 120%;
 }
 
-.form__checkbox  {
+.form__checkbox {
   color: $color-basic-white;
   position: relative;
   display: block;
@@ -79,7 +79,7 @@ fieldset input {
   left: -25px;
   width: 12px;
   height: 8px;
-  background: url('../img/svg/checkbox.svg') no-repeat;
+  background: url("../img/svg/checkbox.svg") no-repeat;
 }
 
 .form__btn {

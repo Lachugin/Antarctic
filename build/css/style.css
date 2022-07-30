@@ -774,7 +774,7 @@ button,
 }
 
 .header {
-  background: url("../img/header/modile.png") center center/cover no-repeat;
+  background: url("../img/header/modile.png") center center/cover no-repeat #011c40;
   height: 500px;
 }
 
@@ -942,6 +942,12 @@ button,
   font-size: 24px;
   line-height: 140%;
   color: #011c40;
+}
+
+.journey__img img {
+  max-width: 560px;
+  max-height: 301px;
+  background-color: beige;
 }
 
 .journey__info p {
@@ -1268,7 +1274,7 @@ fieldset input {
   content: "";
   position: absolute;
   left: -29px;
-  top: 0;
+  top: -4px;
   width: 20px;
   height: 20px;
   background-color: #f9fbfd;
@@ -1277,7 +1283,7 @@ fieldset input {
 .form__checkbox-input:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: -25px;
   width: 12px;
   height: 8px;

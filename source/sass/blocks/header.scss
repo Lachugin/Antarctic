@@ -1,5 +1,5 @@
 .header {
-  background: url("../img/header/modile.png") center (center/cover) no-repeat;
+  background: url("../img/header/modile.png") center (center/cover) no-repeat $color-basic-black;
   height: 500px;
 
   @media (min-width: 768px) {

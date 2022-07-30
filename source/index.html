@@ -13,10 +13,10 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__wrapper">
-        <nav class="nav">
+      <div class="wrapper">
+        <nav class="nav" id="header-nav">
           <div class="header__logo">
-            <a class="logo">
+            <a class="logo" id="header-logo">
               <svg width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z" fill="#011C40"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z" fill="#011C40"/>
@@ -24,21 +24,21 @@
                 </svg>
             </a>
           </div>
-          <ul class="nav__list">
+          <ul class="nav__list" id="header-list">
             <li class="nav__item">
-              <a href="#">Преимущества</a>
+              <a href="#advantage">Преимущества</a>
             </li>
             <li class="nav__item">
-              <a href="#">Направления</a>
+              <a href="#booking">Направления</a>
             </li>
             <li class="nav__item">
-              <a href="#">Ближайшие круизы</a>
+              <a href="#cruises">Ближайшие круизы</a>
             </li>
             <li class="nav__item">
-              <a href="#">Контакты</a>
+              <a href="#contact">Контакты</a>
             </li>
           </ul>
-          <button class="header__btn">
+          <button class="header__btn" id="header-btn">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
@@ -69,7 +69,7 @@
         </div>
       </div>
     </section>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <div class="container">
         <div class="advantage__wrapper">
           <h2>Преимущества</h2>
@@ -102,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="cruises">
+    <section class="cruises" id="cruises">
       <div class="container">
         <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
@@ -245,7 +245,7 @@
         </ul>
       </div>
     </section>
-    <section class="booking">
+    <section class="booking" id="booking">
       <div class="container">
         <div class="booking__wrapper">
           <div class="booking__inner">
@@ -259,16 +259,16 @@
                   и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
                   в&nbsp;ближайшее время</h3>
                 <label for="data-name">
-                  <input type="text" placeholder="Имя" id="data-name">
+                  <input type="text" placeholder="Имя" id="data-name" required>
                 </label>
                 <label for="data-phone">
-                  <input type="tel" placeholder="Телефон" id="data-phone">
+                  <input type="tel" placeholder="Телефон" id="data-phone" required>
                 </label>
                 <label for="data-email">
-                  <input type="email" placeholder="Email" id="data-email">
+                  <input type="email" placeholder="Email" id="data-email" required>
                 </label>
                 <div class="form__checkbox-box">
-                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="checkbox" id="data-personal">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="checkbox" id="data-personal" required>
                   <label class="form__checkbox" for="data-personal">Я согласен на обработку моих персональных данных</label>
                 </div>
                 <button class="form__btn" type="submit">Оставить заявку</button>
@@ -279,15 +279,10 @@
       </div>
 
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contact">
       <div class="container">
         <div class="contacts__wrapper">
-          <div class="contacts__maps">
-            <picture>
-              <source media="(max-width: 768px)"
-                srcset="img/img-map-tablet.webp 1x, img/img-map-tablet@2.webp 2x">
-                <img src="img/img-map.jpg" srcset="img/img-map@2.jpg 2x"  alt="Карта">
-            </picture>
+          <div class="contacts__maps" id="map">
           </div>
           <div class="contacts__info">
             <h2>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
@@ -389,7 +384,7 @@
       </div>
     </div>
   </div>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=31b4f0b9-7b15-41f6-8997-c2351044a293&lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

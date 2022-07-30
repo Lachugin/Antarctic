@@ -385,7 +385,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -393,15 +393,15 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("'woff2'"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -409,7 +409,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -445,7 +445,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 a {
@@ -568,9 +568,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
   /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 }
 
 .wrapper .header,
@@ -795,8 +793,8 @@ button,
   font-weight: 700;
   font-size: 36px;
   line-height: 125%;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__inner p {
@@ -806,20 +804,8 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header__btn--close {
-  border: none;
-  background: url("../img/svg/close.svg") center center/cover no-repeat;
-  width: 13px;
-  height: 13px;
-  -ms-grid-column-align: end;
-  justify-self: end;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__logo {
@@ -845,16 +831,16 @@ button,
   align-self: center;
 }
 
-.nav--active {
-  background-color: #F9FBFD;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 500px;
-  grid-template-rows: 1fr 500px;
-  padding: 25px;
-  margin-left: 25px;
+[data-btn="is-open"] {
+  border: none;
+  background: url("../img/svg/close.svg") center center/cover no-repeat;
+  width: 13px;
+  height: 13px;
+  -ms-grid-column-align: end;
+  justify-self: end;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .nav {
@@ -865,7 +851,26 @@ button,
   padding: 20px;
 }
 
-.nav__list--active {
+[data-nav="is-open"] {
+  position: absolute;
+  right: 0;
+  width: 280px;
+  background-color: #f9fbfd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 500px;
+  grid-template-rows: 1fr 500px;
+  padding: 25px;
+  margin-left: 25px;
+}
+
+.nav__list {
+  display: none;
+}
+
+[data-nav-list="is-open"] {
   margin: 0;
   padding: 0;
   padding-top: 25px;
@@ -887,10 +892,6 @@ button,
   grid-column-end: 3;
 }
 
-.nav__list {
-  display: none;
-}
-
 .nav__item a {
   display: block;
   padding: 14px 0;
@@ -898,7 +899,7 @@ button,
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #011C40;
+  color: #011c40;
   cursor: pointer;
 }
 
@@ -907,7 +908,7 @@ button,
 }
 
 .journey {
-  background: #F9FBFD;
+  background: #f9fbfd;
   padding: 0;
   padding-bottom: 65px;
 }
@@ -940,7 +941,7 @@ button,
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .journey__info p {
@@ -948,7 +949,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   padding-bottom: 15px;
 }
 
@@ -980,7 +981,7 @@ button,
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .advantage__list {
@@ -1018,7 +1019,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .advantage__item p {
@@ -1026,7 +1027,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .cruises {
@@ -1040,7 +1041,7 @@ button,
   font-size: 24px;
   line-height: 150%;
   text-align: center;
-  color: #011C40;
+  color: #011c40;
 }
 
 .cruises__list {
@@ -1090,8 +1091,8 @@ button,
   top: 81%;
   padding: 25px 25px;
   background: none;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1099,12 +1100,12 @@ button,
 
 .cruises__card--active {
   top: 0;
-  background: #011C40;
+  background: #011c40;
 }
 
 .cruises__item:hover .cruises__card {
   top: 0%;
-  background: #011C40;
+  background: #011c40;
 }
 
 .cruises__card h3 {
@@ -1114,7 +1115,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises__card h4 {
@@ -1124,7 +1125,7 @@ button,
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises__card p {
@@ -1134,7 +1135,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises__card a {
@@ -1146,8 +1147,8 @@ button,
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: #011C40;
-  background: #F9FBFD;
+  color: #011c40;
+  background: #f9fbfd;
   cursor: pointer;
   text-align: center;
 }
@@ -1194,7 +1195,7 @@ button,
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
-  color: #011C40;
+  color: #011c40;
   text-align: center;
 }
 
@@ -1203,7 +1204,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #011C40;
+  color: #011c40;
   text-align: center;
   max-width: 352px;
 }
@@ -1212,9 +1213,9 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
-  background: #011C40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   padding: 30px 25px 40px;
   margin-top: 15px;
   width: 100%;
@@ -1227,7 +1228,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-align: center;
 }
 
@@ -1252,7 +1253,7 @@ fieldset input {
 }
 
 .form__checkbox {
-  color: #F9FBFD;
+  color: #f9fbfd;
   position: relative;
   display: block;
   cursor: pointer;
@@ -1270,7 +1271,7 @@ fieldset input {
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .form__checkbox-input:checked + label::after {
@@ -1300,8 +1301,8 @@ fieldset input {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: #011C40;
-  background: #F9FBFD;
+  color: #011c40;
+  background: #f9fbfd;
   cursor: pointer;
   padding: 11px 0 11px;
 }
@@ -1318,6 +1319,8 @@ fieldset input {
 }
 
 .contacts__maps {
+  background: url("../img/img-map.jpg") center center/cover no-repeat;
+  height: 316px;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -1325,7 +1328,7 @@ fieldset input {
 }
 
 .contacts__info {
-  margin-top: 0px;
+  margin-top: 0;
   max-width: 500px;
 }
 
@@ -1336,7 +1339,7 @@ fieldset input {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .contacts__info a {
@@ -1354,11 +1357,11 @@ fieldset input {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
 }
 
 .footer {
-  background: #011C40;
+  background: #011c40;
 }
 
 .footer__wrapper {
@@ -1402,7 +1405,7 @@ fieldset input {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .footer__list {
@@ -1439,7 +1442,7 @@ fieldset input {
 }
 
 .logo svg path {
-  fill: #F9FBFD;
+  fill: #f9fbfd;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1516,7 +1519,7 @@ fieldset input {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin-right: 23px;
   }
 
@@ -1554,7 +1557,7 @@ fieldset input {
     max-width: 206px;
     margin-top: 0;
     margin-right: 30px;
-    padding: 30px 0 0px 20px;
+    padding: 30px 0 0 20px;
   }
 
   .advantage__item h3 {
@@ -1634,6 +1637,11 @@ fieldset input {
     grid-template-columns: 1fr 1fr;
   }
 
+  .contacts__maps {
+    background: url("../img/img-map-tablet.jpg") center center/cover no-repeat;
+    height: 335px;
+  }
+
   .contacts__info {
     -ms-grid-column-align: end;
     justify-self: end;
@@ -1685,7 +1693,7 @@ fieldset input {
   }
 
   .logo svg path {
-    fill: #F9FBFD;
+    fill: #f9fbfd;
   }
 }
 
@@ -1703,8 +1711,8 @@ fieldset input {
   .header {
     background: url("../img/header/desktop.png") center center/cover no-repeat;
     min-height: 650px;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .header__inner {
@@ -1817,6 +1825,10 @@ fieldset input {
     column-gap: 100px;
   }
 
+  .contacts__maps {
+    height: 306px;
+  }
+
   .footer__wrapper {
     height: 140px;
     -webkit-column-gap: 40px;
@@ -1862,7 +1874,7 @@ fieldset input {
   }
 
   .logo svg {
-    fill: #F9FBFD;
+    fill: #f9fbfd;
     width: 70px;
     height: 38px;
   }
@@ -1875,8 +1887,8 @@ fieldset input {
 }
 
 @media (max-width: 768px) {
-  .logo--close svg path {
-    fill: #011C40;
+  [data-logo="is-open"] svg path {
+    fill: #011c40;
     width: 42px;
     height: 22px;
   }

@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.logo--close svg path {
+[data-logo="is-open"] svg path {
   @media (max-width: 768px) {
     fill: $color-basic-black;
     width: 42px;

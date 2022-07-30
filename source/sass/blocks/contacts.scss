@@ -17,6 +17,17 @@
 }
 
 .contacts__maps {
+  background: url("../img/img-map.jpg") center (center/cover) no-repeat;
+  height: 316px;
+
+  @media (min-width: 768px) {
+    background: url("../img/img-map-tablet.jpg") center (center/cover) no-repeat;
+    height: 335px;
+  }
+
+  @media (min-width: 1366px) {
+    height: 306px;
+  }
   order: 2;
   margin-top: 10px;
 }

@@ -85,15 +85,6 @@
   }
 }
 
-.header__btn--close {
-  border: none;
-  background: url("../img/svg/close.svg") center (center/cover) no-repeat;
-  width: 13px;
-  height: 13px;
-  justify-self: end;
-  align-self: center;
-}
-
 .header__logo {
   display: flex;
   align-content: center;
@@ -111,4 +102,13 @@
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+[data-btn="is-open"] {
+  border: none;
+  background: url("../img/svg/close.svg") center (center/cover) no-repeat;
+  width: 13px;
+  height: 13px;
+  justify-self: end;
+  align-self: center;
 }

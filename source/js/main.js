@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {scroll} from './modules/modals/scroll';
+import {getMenu} from './modules/modals/menu';
+import {init} from './vendor/yandex-map';
 
 // ---------------------------------
 
@@ -9,7 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  scroll();
+  getMenu();
   // Modules
   // ---------------------------------
 
@@ -17,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    init();
   });
 });
 

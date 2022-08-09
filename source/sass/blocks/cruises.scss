@@ -88,7 +88,12 @@
 }
 
 .cruises__item:hover .cruises__card {
-  top: 0%;
+  top: 0;
+  background: $color-basic-black;
+}
+
+.cruises__item:focus .cruises__card {
+  top: 0;
   background: $color-basic-black;
 }
 

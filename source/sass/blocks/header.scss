@@ -1,88 +1,39 @@
 .header {
-  background: url("../img/header/modile.png") center (center/cover) no-repeat $color-basic-black;
-  height: 500px;
-
-  @media (min-width: 768px) {
-    background: url("../img/header/tablet.png") center (center/cover) no-repeat;
-    min-height: 638px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/header/tablet@2.png");
-    }
-  }
+  background: url("../img/header/desktop.png") center (center/cover) no-repeat rgb(91, 167, 229);
+  height: 650px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (min-width: 1366px) {
-    background: url("../img/header/desktop.png") center (center/cover) no-repeat;
-    min-height: 650px;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/desktop@2.png");
     }
   }
 }
 
-.header .container {
-  padding: 0;
-}
-
-
 .header__inner {
-  margin-top: 115px;
-  margin-left: 15px;
-
-  @media (min-width: 768px) {
-    margin-left: 45px;
-    margin-top: 185px;
-  }
-
-  @media (min-width: 1366px) {
-    margin-left: 198px;
-    margin-top: 165px;
-  }
+  margin-left: 95px;
+  margin-top: 162px;
 }
 
 .header__inner h1 {
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 125%;
+  font-size: 54px;
+  line-height: 66px;
   color: $color-basic-white;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
-  @media (min-width: 768px) {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-  }
-
-  @media (min-width: 1366px) {
-    font-size: 54px;
-    line-height: 66px;
-  }
 }
 
 .header__inner p {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 20px;
+  line-height: 24px;
   color: $color-basic-white;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
-  @media (min-width: 768px) {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  @media (min-width: 1366px) {
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 .header__logo {
@@ -99,7 +50,7 @@
   justify-self: end;
   align-self: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     display: none;
   }
 }

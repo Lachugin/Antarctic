@@ -1,15 +1,7 @@
 .journey {
   background: $color-basic-white;
   padding: 0;
-  padding-bottom: 65px;
-
-  @media (min-width: 768px) {
-    padding: 60px 0;
-  }
-
-  @media (min-width: 1366px) {
-    padding: 120px 0;
-  }
+  padding: 120px 0;
 }
 
 .journey .container {
@@ -21,48 +13,26 @@
 }
 
 .journey__info {
-  margin-top: 35px;
-  max-width: 290px;
-
-  @media (min-width: 768px) {
-    max-width: 324px;
-  }
-
-  @media (min-width: 1366px) {
-    max-width: 512px;
-  }
+  margin-top: -10px;
+  max-width: 512px;
 }
 
 .journey__info h2 {
+  max-width: 430px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 140%;
+  font-size: 28px;
+  line-height: 150%;
   color: $color-basic-black;
+}
 
-
-  @media (min-width: 768px) {
-    margin: 0;
-    max-width: 205px;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 140%;
-  }
-
-  @media (min-width: 1366px) {
-    margin: 0;
-    max-width: 430px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 150%;
-  }
+.journey__img {
+  background-color: rgb(91, 167, 229);
 }
 
 .journey__img img {
   max-width: 560px;
   max-height: 301px;
-  background-color: beige;
 }
 
 .journey__info p {
@@ -71,5 +41,4 @@
   font-size: 16px;
   line-height: 150%;
   color: $color-basic-black;
-  padding-bottom: 15px;
 }

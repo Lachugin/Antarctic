@@ -828,7 +828,7 @@ button,
 }
 
 .advantage {
-  background: url("../img/advantage.jpg") center center/cover no-repeat;
+  background: url("../img/advantage.jpg") center center/cover no-repeat #5ba7e5;
   min-height: 562px;
 }
 
@@ -1189,7 +1189,7 @@ fieldset input {
 }
 
 .contacts__maps {
-  background: url("../img/img-map.jpg") center center/cover no-repeat;
+  background: url("../img/img-map.jpg") center center/cover no-repeat #869c54;
   height: 306px;
   width: 560px;
 }

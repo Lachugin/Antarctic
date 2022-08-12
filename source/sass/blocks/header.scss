@@ -8,11 +8,36 @@
       background-image: url("../img/header/desktop@2.png");
     }
   }
+
+  @media (max-width: 768px) {
+    background: url("../img/header/tablet.png") center (center/cover) no-repeat rgb(91, 167, 229);
+    height: 638px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/tablet@2.png");
+    }
+  }
+
+  @media (max-width: 425px) {
+    background: url("../img/header/modile.png") center (center/cover) no-repeat rgb(91, 167, 229);
+    height: 500px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/modile@2.png");
+    }
+  }
 }
 
 .header__inner {
   margin-left: 95px;
   margin-top: 162px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 188px;
+  }
+
+  @media (max-width: 425px) {
+    margin-top: 105px;
+  }
 }
 
 .header__inner h1 {
@@ -23,6 +48,16 @@
   line-height: 66px;
   color: $color-basic-white;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 36px;
+    line-height: 125%;
+  }
 }
 
 .header__inner p {
@@ -34,6 +69,16 @@
   line-height: 24px;
   color: $color-basic-white;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 .header__logo {

@@ -8,8 +8,16 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 110px 0;
-  padding-bottom: 75px;
+  padding: 110px 0 75px;
+
+  @media (max-width: 950px) {
+    align-content: center;
+    padding: 90px 0 100px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 50px 0 30px;
+  }
 }
 
 .advantage__wrapper h2 {
@@ -19,6 +27,16 @@
   font-size: 28px;
   line-height: 150%;
   color: $color-basic-black;
+
+  @media (max-width: 950px) {
+    font-size: 26px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+    line-height: 150%;
+  }
 }
 
 .advantage__list {
@@ -27,15 +45,37 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  @media (max-width: 425px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0;
+  }
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+  }
 }
 
 .advantage__item {
   box-sizing: border-box;
   padding: 35px 30px 10px;
+  min-width: 206px;
   max-width: 360px;
   background: #f9fbfd;
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    margin-right: 30px;
+    padding: 25px 16px 25px 20px;
+  }
+
+  @media (max-width: 750px) {
+    min-height: 250px;
+    margin: 0 0 30px;
+    padding: 25px 16px 25px 20px;
+  }
 }
 
 .advantage__item:last-child {
@@ -48,6 +88,10 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-basic-black;
+
+  @media (max-width: 950px) {
+    margin: 10px 0 0;
+  }
 }
 
 .advantage__item p {
@@ -56,4 +100,8 @@
   font-size: 14px;
   line-height: 140%;
   color: $color-basic-black;
+
+  @media (max-width: 950px) {
+    margin: 0;
+  }
 }

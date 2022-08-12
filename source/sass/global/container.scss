@@ -4,7 +4,11 @@
   margin: 0 auto;
   padding: 0 103px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: 425px) {
     padding: 0 15px;
   }
 }

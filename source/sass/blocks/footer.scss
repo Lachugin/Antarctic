@@ -6,6 +6,27 @@
   padding: 50px 0;
   display: flex;
   column-gap: 40px;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0;
+    row-gap: 20px;
+  }
+
+  @media (max-width: 1055px) {
+    column-gap: 30px;
+    padding: 40px 0;
+  }
+}
+
+.footer__logo {
+  @media (max-width: 1055px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .footer__logo .logo {
@@ -14,6 +35,14 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+
+  @media (max-width: 550px) {
+  }
+
+  @media (max-width: 1055px) {
+    width: 38px;
+    height: 20px;
+  }
 }
 
 .footer__nav-list {
@@ -22,6 +51,15 @@
   list-style: none;
   column-gap: 33px;
   display: flex;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 1055px) {
+    column-gap: 23px;
+  }
 }
 
 .footer__nav-item {
@@ -35,6 +73,11 @@
   line-height: 20px;
   cursor: pointer;
   color: $color-basic-white;
+
+  @media (max-width: 1055px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .footer__list {
@@ -45,34 +88,42 @@
   align-items: center;
   column-gap: 30px;
   margin-left: auto;
-}
 
-.footer__item:nth-child(1) svg {
-  width: 9px;
-  height: 16px;
+  @media (max-width: 550px) {
+    margin: 0;
+  }
 
-  @media (min-width: 1366px) {
-    width: 11px;
-    height: 20px;
+  @media (max-width: 1055px) {
+    column-gap: 20px;
   }
 }
 
-.footer__item:nth-child(2) svg {
-  width: 16px;
-  height: 16px;
+.footer__item--fb svg {
+  width: 11px;
+  height: 20px;
 
-  @media (min-width: 1366px) {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.footer__item:nth-child(3) svg {
-  width: 16px;
-  height: 13px;
-
-  @media (min-width: 1366px) {
-    width: 19px;
+  @media (max-width: 1055px) {
+    width: 9px;
     height: 16px;
+  }
+}
+
+.footer__item--inst svg {
+  width: 20px;
+  height: 20px;
+
+  @media (max-width: 1055px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.footer__item--twit svg {
+  width: 19px;
+  height: 16px;
+
+  @media (max-width: 1055px) {
+    width: 16px;
+    height: 13px;
   }
 }

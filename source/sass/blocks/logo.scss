@@ -2,26 +2,33 @@
   display: flex;
   width: 70px;
   height: 38px;
+  align-items: center;
+  color: $color-basic-white;
 }
 
 .logo svg {
-  fill: $color-basic-white;
+  fill: currentColor;
   width: 70px;
   height: 38px;
+  @media (max-width: 768px) {
+    fill: currentColor;
+    width: 38px;
+    height: 20px;
+  }
 }
 
 [data-logo="is-open"] svg path {
   @media (max-width: 768px) {
-    fill: $color-basic-black;
+    fill: currentColor;
     width: 42px;
     height: 22px;
   }
 }
 
-.logo svg path {
-  fill: $color-basic-white;
+.logo svg {
+  fill: currentColor;
 
   @media (min-width: 768px) {
-    fill: $color-basic-white;
+    fill: currentColor;
   }
 }

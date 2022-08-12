@@ -2,6 +2,14 @@
   background: $color-basic-white;
   padding: 0;
   padding: 120px 0;
+
+  @media (max-width: 768px) {
+    padding: 75px 0;
+  }
+
+  @media (max-width: 425px) {
+    padding: 45px 0 0;
+  }
 }
 
 .journey .container {
@@ -15,6 +23,10 @@
 .journey__info {
   margin-top: -10px;
   max-width: 512px;
+
+  @media (max-width: 768px) {
+    max-width: 324px;
+  }
 }
 
 .journey__info h2 {
@@ -24,6 +36,11 @@
   font-size: 28px;
   line-height: 150%;
   color: $color-basic-black;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    line-height: 140%;
+  }
 }
 
 .journey__img {
@@ -31,8 +48,13 @@
 }
 
 .journey__img img {
-  max-width: 560px;
-  max-height: 301px;
+  width: 560px;
+  height: 301px;
+
+  @media (max-width: 768px) {
+    width: 324px;
+    height: 264px;
+  }
 }
 
 .journey__info p {

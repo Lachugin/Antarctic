@@ -3,19 +3,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 30px 0 70px;
+  }
+
+  @media (max-width: 1050px) {
+    padding: 100px 0;
+  }
 }
 
 .contacts__maps {
   background: url("../img/img-map.jpg") center (center/cover) no-repeat;
   height: 306px;
-  max-width: 560px;
-  order: 2;
+  width: 560px;
+
+  @media (max-width: 550px) {
+    width: 290px;
+    height: 316px;
+    order: 1;
+  }
+
+  @media (max-width: 1050px) {
+    width: 324px;
+    height: 335px;
+  }
 }
 
 .contacts__info {
   margin-top: 0;
   max-width: 500px;
-  order: 3;
+  order: 0;
+
+  @media (max-width: 550px) {
+
+  }
+
+  @media (max-width: 1050px) {
+    max-width: 324px;
+  }
 }
 
 .contacts__info h2 {

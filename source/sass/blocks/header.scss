@@ -12,6 +12,7 @@
   @media (max-width: 768px) {
     background: url("../img/header/tablet.png") center (center/cover) no-repeat rgb(91, 167, 229);
     height: 638px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/tablet@2.png");
     }
@@ -20,6 +21,7 @@
   @media (max-width: 425px) {
     background: url("../img/header/modile.png") center (center/cover) no-repeat rgb(91, 167, 229);
     height: 500px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header/modile@2.png");
     }

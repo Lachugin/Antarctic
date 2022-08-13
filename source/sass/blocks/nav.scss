@@ -10,16 +10,18 @@
 
 [data-nav="is-open"] {
   position: absolute;
-  right: 0;
-  width: 280px;
+  right: -15px;
+  left: 35px;
   background-color: $color-basic-bg;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 500px;
-  padding: 25px;
   margin-left: 25px;
-}
 
+  @media (max-width: 768px) {
+    padding: 25px 17px;
+  }
+}
 
 .nav__list {
   display: none;
@@ -57,7 +59,15 @@
   color: $color-basic-white;
   cursor: pointer;
 
+  @media (max-width: 750px) {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-basic-black;
+    margin-right: 0;
+  }
+
   @media (max-width: 768px) {
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     margin-right: 22px;

@@ -67,7 +67,6 @@
   @media (max-width: 1000px) {
     width: 309px;
   }
-
 }
 
 .cruises__img img {
@@ -96,12 +95,12 @@
   background: $color-basic-black;
 }
 
-.cruises__item:hover .cruises__card {
+.cruises__item:focus .cruises__card {
   top: 0;
   background: $color-basic-black;
 }
 
-.cruises__item:focus .cruises__card {
+.cruises__item:hover .cruises__card {
   top: 0;
   background: $color-basic-black;
 }

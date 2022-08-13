@@ -3,6 +3,7 @@ export const getMenu = () => {
   const headerLogo = document.getElementById('header-logo');
   const headerList = document.getElementById('header-list');
   const headerBtn = document.getElementById('header-btn');
+  const headerBody = document.getElementById('body-fixed');
 
   headerBtn.addEventListener('click', function (e) {
     e.preventDefault();
@@ -11,13 +12,13 @@ export const getMenu = () => {
       headerNav.setAttribute('data-nav', 'is-open');
       headerLogo.setAttribute('data-logo', 'is-open');
       headerList.setAttribute('data-nav-list', 'is-open');
+      headerBody.setAttribute('data-body', 'is-open');
     } else {
       headerBtn.removeAttribute('data-btn');
       headerNav.removeAttribute('data-nav');
       headerLogo.removeAttribute('data-logo');
       headerList.removeAttribute('data-nav-list');
+      headerBody.removeAttribute('data-body');
     }
   });
 };
-
-

@@ -1,5 +1,5 @@
 export const scroll = () => {
-  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+  const smoothLinks = document.querySelectorAll('.nav__item a[href^="#"]');
   for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
       e.preventDefault();
@@ -11,4 +11,3 @@ export const scroll = () => {
     });
   }
 };
-

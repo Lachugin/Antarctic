@@ -773,7 +773,6 @@ button,
 
 .journey {
   background: #f9fbfd;
-  padding: 0;
   padding: 120px 0;
 }
 
@@ -972,12 +971,12 @@ button,
   background: #011c40;
 }
 
-.cruises__item:hover .cruises__card {
+.cruises__item:focus .cruises__card {
   top: 0;
   background: #011c40;
 }
 
-.cruises__item:focus .cruises__card {
+.cruises__item:hover .cruises__card {
   top: 0;
   background: #011c40;
 }
@@ -1331,7 +1330,7 @@ fieldset input {
 
 [data-body="is-open"] {
   position: fixed;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1609,7 +1608,7 @@ fieldset input {
   .nav__item a {
     font-size: 18px;
     line-height: 22px;
-    color: #011C40;
+    color: #011c40;
     margin-right: 0;
   }
 

@@ -95,7 +95,7 @@
   background: $color-basic-black;
 }
 
-.cruises__item:focus .cruises__card {
+.cruises__item:focus-within .cruises__card {
   top: 0;
   background: $color-basic-black;
 }
@@ -116,8 +116,7 @@
 }
 
 .cruises__card h4 {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

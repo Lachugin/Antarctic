@@ -1075,7 +1075,7 @@ button,
   max-width: 352px;
 }
 
-.form fieldset {
+.form .form__inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
@@ -1097,7 +1097,7 @@ button,
   text-align: center;
 }
 
-fieldset input {
+.form__inner input {
   width: 100%;
   border: none;
   padding: 11px 0 11px 16px;
@@ -1360,7 +1360,7 @@ fieldset input {
     padding-top: 33px;
   }
 
-  fieldset input {
+  .form__inner input {
     padding: 16px 0 11px 26px;
     margin-bottom: 20px;
   }
@@ -1672,7 +1672,7 @@ fieldset input {
     margin-top: 15px;
   }
 
-  .form fieldset {
+  .form .form__inner {
     padding: 35px 30px 27px;
   }
 

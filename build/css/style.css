@@ -893,7 +893,6 @@ button,
   width: 100%;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  height: 386px;
 }
 
 .cruises__img {
@@ -959,9 +958,7 @@ button,
 }
 
 .cruises__card h3 {
-  position: absolute;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

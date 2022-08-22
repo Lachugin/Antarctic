@@ -52,7 +52,6 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
-  height: 386px;
 }
 
 .cruises__img {
@@ -124,9 +123,7 @@
 }
 
 .cruises__card h3 {
-  position: absolute;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

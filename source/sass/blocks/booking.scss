@@ -1,13 +1,13 @@
 .booking {
   background: url("../img/booking.jpg") center (center/cover) no-repeat rgb(91, 167, 229);
-  height: 555px;
+  min-height: 555px;
 
   @media (max-width: 550px) {
-    height: 760px;
+    min-height: 760px;
   }
 
   @media (max-width: 1050px) {
-    height: 805px;
+    min-height: 805px;
   }
 }
 // height: 760px;
@@ -26,7 +26,7 @@
   }
 
   @media (max-width: 550px) {
-    padding: 54px 0;
+    padding: 64px 0;
   }
 }
 
@@ -64,6 +64,7 @@
   @media (max-width: 1050px) {
     text-align: center;
     font-size: 34px;
+    margin-bottom: 5px;
   }
 }
 

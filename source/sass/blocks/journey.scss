@@ -7,7 +7,7 @@
   }
 
   @media (max-width: 425px) {
-    padding: 45px 0 0;
+    padding: 45px 0 65px;
   }
 }
 
@@ -36,19 +36,36 @@
   line-height: 150%;
   color: $color-basic-black;
 
+  @media (max-width: 600px) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 206px;
+  }
+
   @media (max-width: 768px) {
     font-size: 26px;
     line-height: 140%;
+    max-width: 206px;
   }
 }
 
 .journey__img {
   background-color: rgb(91, 167, 229);
+
+  @media (max-width: 600px) {
+    margin-top: 15px;
+  }
 }
 
 .journey__img img {
   width: 560px;
   height: 301px;
+
+  @media (max-width: 600px) {
+    width: 290px;
+    height: 186px;
+  }
 
   @media (max-width: 768px) {
     width: 324px;

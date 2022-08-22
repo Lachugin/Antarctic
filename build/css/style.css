@@ -638,15 +638,16 @@ button,
 }
 
 .header {
+  position: relative;
   background: url("../img/header/desktop.png") center center/cover no-repeat #5ba7e5;
-  height: 650px;
+  min-height: 650px;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header__inner {
-  margin-left: 95px;
-  margin-top: 162px;
+  padding-left: 95px;
+  padding-top: 162px;
 }
 
 .header__inner h1 {
@@ -670,18 +671,8 @@ button,
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .header__btn {
+  display: none;
   border: none;
   background: url("../img/svg/open.svg") center center/cover no-repeat;
   width: 24px;
@@ -698,9 +689,12 @@ button,
   background: url("../img/svg/close.svg") center center/cover no-repeat;
   width: 13px;
   height: 13px;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
   -ms-grid-column-align: end;
   justify-self: end;
-  -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
@@ -715,44 +709,14 @@ button,
   grid-template-columns: max-content 1fr;
 }
 
-[data-nav="is-open"] {
-  position: absolute;
-  right: -15px;
-  left: 35px;
-  background-color: #f9fbfd;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 500px;
-  grid-template-rows: 1fr 500px;
-  margin-left: 25px;
-}
-
 .nav__list {
-  display: none;
-}
-
-[data-nav-list="is-open"] {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 2;
-  grid-column-end: 3;
+  justify-self: end;
 }
 
 .nav__item a {
@@ -899,7 +863,7 @@ button,
 }
 
 .cruises {
-  padding: 100px 0;
+  padding: 87px 0 96px;
   margin: 0 auto;
 }
 
@@ -913,75 +877,89 @@ button,
 }
 
 .cruises__list {
+  display: -ms-grid;
+  display: grid;
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  padding: 25px 15px;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .cruises__item {
-  width: 260px;
   position: relative;
-  overflow: hidden;
-  margin: 15px 0;
-}
-
-.cruises__img img {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   height: 386px;
 }
 
-.cruises__card {
+.cruises__img {
+  z-index: 2;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.cruises__img h3 {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f9fbfd;
+}
+
+.cruises__img img {
+  display: block;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: absolute;
-  top: 81%;
-  padding: 25px 25px;
-  background: none;
+}
+
+.cruises__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 28px 25px 35px;
+  color: #f9fbfd;
+  background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .cruises__card--active {
-  top: 0;
+  z-index: 99;
   background: #011c40;
 }
 
 .cruises__item:focus-within .cruises__card {
-  top: 0;
-  background: #011c40;
+  z-index: 99;
 }
 
 .cruises__item:hover .cruises__card {
-  top: 0;
+  z-index: 99;
   background: #011c40;
 }
 
 .cruises__card h3 {
+  position: absolute;
   margin: 0;
   margin-bottom: 20px;
   font-style: normal;
@@ -1012,9 +990,8 @@ button,
 
 .cruises__card a {
   display: block;
-  margin: 0;
-  margin-top: 20px;
-  padding: 14px 46px;
+  margin-top: auto;
+  padding: 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1025,9 +1002,34 @@ button,
   text-align: center;
 }
 
+.cruises__description {
+  height: 236px;
+  margin-top: 42px;
+  margin-bottom: 5px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 20px;
+  scrollbar-color: #ffffff #808080;
+  scrollbar-width: auto;
+}
+
+.cruises__description::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cruises__description::-webkit-scrollbar-track {
+  background: #808080;
+}
+
+.cruises__description::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 2px solid #808080;
+  border-radius: 20px;
+}
+
 .booking {
   background: url("../img/booking.jpg") center center/cover no-repeat #5ba7e5;
-  height: 555px;
+  min-height: 555px;
 }
 
 .booking__wrapper {
@@ -1082,13 +1084,12 @@ button,
   background: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
-  padding: 45px 45px 50px;
-  width: 100%;
+  padding: 45px 44px 50px;
+  max-width: 403px;
 }
 
 .form h3 {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1098,7 +1099,7 @@ button,
 }
 
 .form__inner input {
-  width: 100%;
+  width: 311px;
   border: none;
   padding: 11px 0 11px 16px;
   margin-bottom: 25px;
@@ -1323,8 +1324,6 @@ button,
 
 .logo svg {
   fill: #f9fbfd;
-  width: 70px;
-  height: 38px;
 }
 
 [data-body="is-open"] {
@@ -1339,48 +1338,16 @@ button,
   }
 } */
 
-@media (min-width: 767px) {
-  .header__btn {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: end;
-  }
-
-  .cruises__list {
-    padding-top: 33px;
-  }
-
   .form__inner input {
     padding: 16px 0 11px 26px;
     margin-bottom: 20px;
   }
 }
 
-@media (min-width: 1300px) {
-  .cruises__list {
-    padding-top: 5px;
-  }
-}
-
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/header/desktop@2.png");
-  }
-}
-
-@media (min-width: 1366px) {
-  .cruises__img img {
-    height: 386px;
   }
 }
 
@@ -1446,7 +1413,7 @@ button,
 
 @media (max-width: 1050px) {
   .booking {
-    height: 805px;
+    min-height: 805px;
   }
 
   .booking__wrapper {
@@ -1464,6 +1431,7 @@ button,
   .booking__inner h2 {
     text-align: center;
     font-size: 34px;
+    margin-bottom: 5px;
   }
 
   .booking__inner p {
@@ -1486,18 +1454,31 @@ button,
   }
 }
 
+@media (max-width: 1023px) {
+  .cruises__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 45px 15px;
+  }
+
+  .cruises__img h3 {
+    left: 39px;
+    bottom: 8px;
+  }
+
+  .cruises__card {
+    padding: 30px 35px 34px;
+  }
+}
+
 @media (max-width: 1000px) {
   .cruises {
-    padding: 90px 0;
+    padding: 90px 0 60px;
   }
 
   .cruises h2 {
     font-size: 26px;
     margin: 0;
-  }
-
-  .cruises__item {
-    width: 309px;
   }
 }
 
@@ -1522,6 +1503,16 @@ button,
   }
 }
 
+@media (max-width: 769px) {
+  .logo {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 38px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 45px;
@@ -1529,12 +1520,12 @@ button,
 
   .header {
     background: url("../img/header/tablet.png") center center/cover no-repeat #5ba7e5;
-    height: 638px;
+    min-height: 638px;
   }
 
   .header__inner {
-    margin-left: 0;
-    margin-top: 188px;
+    padding-left: 0;
+    padding-top: 188px;
   }
 
   .header__inner h1 {
@@ -1549,10 +1540,6 @@ button,
 
   .nav {
     padding: 17px 0;
-  }
-
-  [data-nav="is-open"] {
-    padding: 25px 17px;
   }
 
   .nav__item a {
@@ -1573,6 +1560,7 @@ button,
   .journey__info h2 {
     font-size: 26px;
     line-height: 140%;
+    max-width: 206px;
   }
 
   .journey__img img {
@@ -1585,11 +1573,6 @@ button,
     padding: 25px 16px 25px 20px;
   }
 
-  .logo svg {
-    width: 38px;
-    height: 20px;
-  }
-
   [data-logo="is-open"] svg {
     fill: #011c40;
     width: 42px;
@@ -1600,6 +1583,50 @@ button,
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 768px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/header/tablet@2.png");
+  }
+}
+
+@media (max-width: 767px) {
+  .header__btn {
+    display: block;
+  }
+
+  [data-nav="is-open"] {
+    position: absolute;
+    right: 0;
+    left: 35px;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: start;
+    align-content: start;
+    height: 100vh;
+    padding: 12px;
+    overflow: auto;
+    background-color: #f9fbfd;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  [data-nav-list="is-open"] {
+    display: block;
+    padding: 30px 13px;
+    grid-column: 1/-1;
+    -ms-grid-column-align: start;
+    justify-self: start;
+  }
+
+  .cruises__list {
+    padding: 28px 15px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cruises__card {
+    padding: 30px 25px 34px;
   }
 }
 
@@ -1623,9 +1650,27 @@ button,
   }
 }
 
+@media (max-width: 600px) {
+  .journey__info h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 206px;
+  }
+
+  .journey__img {
+    margin-top: 15px;
+  }
+
+  .journey__img img {
+    width: 290px;
+    height: 186px;
+  }
+}
+
 @media (max-width: 550px) {
   .advantage__wrapper {
-    padding: 50px 0 30px;
+    padding: 55px 0 35px;
   }
 
   .advantage__wrapper h2 {
@@ -1634,27 +1679,24 @@ button,
   }
 
   .cruises {
-    padding: 60px 0;
+    padding: 60px 0 36px;
   }
 
   .cruises h2 {
     font-size: 24px;
   }
 
-  .cruises__list {
-    margin-top: 15px;
-  }
-
-  .cruises__item {
-    width: 270px;
+  .cruises__img h3 {
+    left: 19px;
+    bottom: 2px;
   }
 
   .booking {
-    height: 760px;
+    min-height: 760px;
   }
 
   .booking__wrapper {
-    padding: 54px 0;
+    padding: 64px 0;
   }
 
   .booking__form {
@@ -1673,7 +1715,15 @@ button,
   }
 
   .form .form__inner {
-    padding: 35px 30px 27px;
+    padding: 35px 30px 40px;
+  }
+
+  .form__inner input {
+    width: 230px;
+  }
+
+  .form__btn {
+    margin-top: 22px;
   }
 
   .contacts__wrapper {
@@ -1681,7 +1731,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px 0 70px;
+    padding: 38px 0 70px;
   }
 
   .contacts__maps {
@@ -1726,11 +1776,11 @@ button,
 
   .header {
     background: url("../img/header/modile.png") center center/cover no-repeat #5ba7e5;
-    height: 500px;
+    min-height: 500px;
   }
 
   .header__inner {
-    margin-top: 105px;
+    padding-top: 123px;
   }
 
   .header__inner h1 {
@@ -1744,7 +1794,7 @@ button,
   }
 
   .journey {
-    padding: 45px 0 0;
+    padding: 45px 0 65px;
   }
 
   .advantage__list {

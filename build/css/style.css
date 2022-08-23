@@ -1001,8 +1001,6 @@ button,
 
 .cruises__description {
   height: 236px;
-  margin-top: 42px;
-  margin-bottom: 5px;
   overflow: auto;
   font-size: 14px;
   line-height: 20px;

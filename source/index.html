@@ -8,6 +8,7 @@
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" as="image" href="img/header/modile@2.webp" />
 </head>
 
 <body id="body-fixed">
@@ -59,7 +60,7 @@
           <source media="(max-width: 1365px)"
                   srcset="img/journey-tablet.webp 1x, img/journey-tablet@2.webp 2x">
           <!-- 560x301   1120x602-->
-          <img src="img/journey.jpg" srcset="img/journey@2.jpg 2x" width="560" height="301"  alt="На фотографии три пингвина">
+          <img src="img/journey.jpg" srcset="img/journey@2.jpg 2x" width="560" height="301" alt="На фотографии три пингвина">
         </picture>
       </div>
     </div>
@@ -321,7 +322,7 @@
                 <input type="text" placeholder="Имя" id="data-name" required>
               </label>
               <label for="data-phone">
-                <input type="tel" placeholder="Телефон" id="data-phone" required>
+                <input type="number" placeholder="Телефон" id="data-phone" required>
               </label>
               <label for="data-email">
                 <input type="email" placeholder="Email" id="data-email" required>

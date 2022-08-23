@@ -639,10 +639,18 @@ button,
 
 .header {
   position: relative;
-  background: url("../img/header/desktop.png") center center/cover no-repeat #5ba7e5;
   min-height: 650px;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #5ba7e5;
+  background-image: url("../img/header/desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@supports (background-image: url("../img/header/desktop.webp")) {
+  .header {
+    background-image: url("../img/header/desktop.webp");
+  }
 }
 
 .header__inner {
@@ -790,8 +798,18 @@ button,
 }
 
 .advantage {
-  background: url("../img/advantage.jpg") center center/cover no-repeat #5ba7e5;
   min-height: 562px;
+  background-color: #5ba7e5;
+  background-image: url("../img/advantage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@supports (background-image: url("../img/advantage.webp")) {
+  .advantage {
+    background-image: url("../img/advantage.webp");
+  }
 }
 
 .advantage__wrapper {
@@ -1023,8 +1041,18 @@ button,
 }
 
 .booking {
-  background: url("../img/booking.jpg") center center/cover no-repeat #5ba7e5;
   min-height: 555px;
+  background-color: #5ba7e5;
+  background-image: url("../img/booking.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@supports (background-image: url("../img/booking.webp")) {
+  .booking {
+    background-image: url("../img/booking.webp");
+  }
 }
 
 .booking__wrapper {
@@ -1182,9 +1210,19 @@ button,
 }
 
 .contacts__maps {
-  background: url("../img/img-map.jpg") center center/cover no-repeat #869c54;
+  background-color: #869c54;
+  background-image: url("../img/img-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 306px;
   width: 560px;
+}
+
+@supports (background-image: url("../img/img-map.webp")) {
+  .contacts__maps {
+    background-image: url("../img/img-map.webp");
+  }
 }
 
 .contacts__info {
@@ -1514,9 +1552,15 @@ button,
   }
 
   .header {
-    background: url("../img/header/tablet.png") center center/cover no-repeat #5ba7e5;
     min-height: 638px;
+    background-image: url("../img/header/tablet.png");
   }
+
+@supports (background-image: url("../img/header/tablet.webp")) {
+    .header {
+      background-image: url("../img/header/tablet.webp");
+    }
+}
 
   .header__inner {
     padding-left: 0;
@@ -1770,9 +1814,15 @@ button,
   }
 
   .header {
-    background: url("../img/header/modile.png") center center/cover no-repeat #5ba7e5;
     min-height: 500px;
+    background-image: url("../img/header/modile.png");
   }
+
+@supports (background-image: url("../img/header/modile.webp")) {
+    .header {
+      background-image: url("../img/header/modile.webp");
+    }
+}
 
   .header__inner {
     padding-top: 123px;
@@ -1809,4 +1859,10 @@ button,
   .header {
     background-image: url("../img/header/modile@2.png");
   }
+
+@supports (background-image: url("../img/header/modile@2.webp")) {
+    .header {
+      background-image: url("../img/header/modile@2.webp");
+    }
+}
 }

@@ -15,7 +15,15 @@
 }
 
 .contacts__maps {
-  background: url("../img/img-map.jpg") center (center/cover) no-repeat #869c54;
+  background-color: #869c54;
+  background-image: url("../img/img-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @supports (background-image: url("../img/img-map.webp")) {
+    background-image: url("../img/img-map.webp");
+  }
   height: 306px;
   width: 560px;
 

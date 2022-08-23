@@ -1,6 +1,14 @@
 .booking {
-  background: url("../img/booking.jpg") center (center/cover) no-repeat rgb(91, 167, 229);
   min-height: 555px;
+  background-color: #5ba7e5;
+  background-image: url("../img/booking.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @supports (background-image: url("../img/booking.webp")) {
+    background-image: url("../img/booking.webp");
+  }
 
   @media (max-width: 550px) {
     min-height: 760px;

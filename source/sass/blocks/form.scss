@@ -18,23 +18,14 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-basic-white;
-  text-align: center;
+  text-align: start;
 }
 
-.form__inner input {
-  width: 311px;
+.form__inner .form__input {
+  width: 100%;
   border: none;
-  padding: 11px 0 11px 16px;
-  margin-bottom: 25px;
-
-  @media (max-width: 550px) {
-    width: 230px;
-  }
-
-  @media (min-width: 768px) {
-    padding: 16px 0 11px 26px;
-    margin-bottom: 20px;
-  }
+  padding: 15px 0 11px 19px;
+  margin-bottom: 20px;
 }
 
 .form label {
@@ -57,6 +48,14 @@
   cursor: pointer;
   user-select: none;
   margin-left: 32px;
+}
+
+.form__checkbox-input {
+  max-width: 291px;
+
+  @media (max-width: 550px) {
+    max-width: 190px;
+  }
 }
 
 .form__checkbox-input + label::before {

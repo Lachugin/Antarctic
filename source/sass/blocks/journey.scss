@@ -14,9 +14,14 @@
 .journey .container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
+  column-gap: 30px;
+
+  @media (max-width: 707px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .journey__info {
@@ -79,4 +84,8 @@
   font-size: 16px;
   line-height: 150%;
   color: $color-basic-black;
+
+  @media (max-width: 1000px) {
+    max-width: 325px;
+  }
 }

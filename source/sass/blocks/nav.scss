@@ -62,7 +62,7 @@
     margin-right: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $vp-1024) {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;

@@ -57,7 +57,7 @@
 
 .booking__inner h2 {
   font-style: normal;
-  margin-bottom: 0;
+  margin-bottom: -10px;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
@@ -79,8 +79,8 @@
 .booking__inner p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 18px;
+  line-height: 150%;
   color: $color-basic-black;
   text-align: start;
   max-width: 352px;
@@ -94,6 +94,5 @@
   @media (max-width: 1050px) {
     margin: auto;
     text-align: center;
-    font-size: 18px;
   }
 }

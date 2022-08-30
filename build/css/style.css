@@ -863,14 +863,9 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 35px 30px 25px;
-  min-width: 206px;
-  max-width: 360px;
+  width: 360px;
   background: #f9fbfd;
   margin-right: 40px;
-}
-
-.advantage__item:last-child {
-  margin-right: 0;
 }
 
 .advantage__item h3 {
@@ -1445,6 +1440,12 @@ button,
   }
 } */
 
+@media (min-width: 1365px) {
+  .advantage__item:last-child {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/header/desktop@2.jpg");
@@ -1455,6 +1456,14 @@ button,
   .advantage__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1366px) {
+  .advantage__item {
+    margin-right: 30px;
+    width: 206px;
+    padding: 25px 16px 25px 20px;
   }
 }
 
@@ -1739,11 +1748,6 @@ button,
     height: 264px;
   }
 
-  .advantage__item {
-    margin-right: 30px;
-    padding: 25px 16px 25px 20px;
-  }
-
   [data-logo="is-open"] svg {
     fill: #011c40;
     width: 42px;
@@ -1826,12 +1830,6 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
   }
-
-  .advantage__item {
-    min-height: 250px;
-    margin: 0 0 30px;
-    padding: 25px 16px 25px 20px;
-  }
 }
 
 @media (max-width: 707px) {
@@ -1874,6 +1872,13 @@ button,
   .advantage__wrapper h2 {
     font-size: 24px;
     line-height: 150%;
+  }
+
+  .advantage__item {
+    width: 290px;
+    min-height: 250px;
+    margin: 0 0 30px;
+    padding: 25px 16px 25px 20px;
   }
 
   .advantage__item--ship {

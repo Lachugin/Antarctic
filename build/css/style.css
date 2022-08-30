@@ -640,8 +640,9 @@ button,
 .header {
   position: relative;
   min-height: 650px;
+  padding-bottom: 20px;
   background-color: #5ba7e5;
-  background-image: url("../img/header/desktop.png");
+  background-image: url("../img/header/desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -669,8 +670,7 @@ button,
 }
 
 .header__inner p {
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -725,6 +725,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   justify-self: end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .nav__item a {
@@ -783,6 +785,8 @@ button,
 
 .journey__img {
   background-color: #5ba7e5;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .journey__img img {
@@ -849,6 +853,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  row-gap: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advantage__item {
@@ -927,10 +935,11 @@ button,
   display: grid;
   margin: 0;
   padding: 25px 15px;
-  gap: 30px;
+  gap: 28px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  justify-items: center;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
 }
@@ -1104,6 +1113,8 @@ button,
 }
 
 .booking__form {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   max-width: 403px;
 }
 
@@ -1204,6 +1215,16 @@ button,
   background: url("../img/svg/checkbox.svg") no-repeat;
 }
 
+.form__checkbox-input:focus + label::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #9b891b;
+}
+
 .form__btn {
   margin-top: 35px;
   width: 100%;
@@ -1244,6 +1265,8 @@ button,
 }
 
 .contacts__maps {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   background-color: #869c54;
   background-image: url("../img/img-map.jpg");
   background-repeat: no-repeat;
@@ -1335,6 +1358,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__nav-item {
@@ -1364,6 +1389,8 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   margin-left: auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__item--fb svg {
@@ -1398,7 +1425,17 @@ button,
 
 [data-body="is-open"] {
   position: fixed;
-  background: rgba(255, 255, 255, 0.25);
+}
+
+[data-body="is-open"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1410,7 +1447,14 @@ button,
 
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url("../img/header/desktop@2.png");
+    background-image: url("../img/header/desktop@2.jpg");
+  }
+}
+
+@media (min-width: 1366px) {
+  .advantage__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -1722,6 +1766,25 @@ button,
     display: block;
   }
 
+  .nav__list {
+    display: none;
+  }
+
+  [data-nav-list="is-open"] {
+    display: block;
+    padding: 30px 13px;
+    grid-column: 1/-1;
+    -ms-grid-column-align: start;
+    justify-self: start;
+  }
+
+  .nav__item a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+    margin-right: 0;
+  }
+
   [data-nav="is-open"] {
     position: absolute;
     right: 0;
@@ -1736,18 +1799,7 @@ button,
     background-color: #f9fbfd;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .nav__list {
-    display: none;
-  }
-
-  [data-nav-list="is-open"] {
-    display: block;
-    padding: 30px 13px;
-    grid-column: 1/-1;
-    -ms-grid-column-align: start;
-    justify-self: start;
+    z-index: 3;
   }
 
   .cruises__list {
@@ -1757,19 +1809,16 @@ button,
     grid-template-columns: 1fr;
   }
 
+  .cruises__item {
+    min-width: 270px;
+  }
+
   .cruises__card {
     padding: 30px 25px 34px;
   }
 }
 
 @media (max-width: 750px) {
-  .nav__item a {
-    font-size: 18px;
-    line-height: 22px;
-    color: #011c40;
-    margin-right: 0;
-  }
-
   .advantage__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1814,13 +1863,47 @@ button,
 }
 
 @media (max-width: 550px) {
+  .nav {
+    padding: 21px 17px 13px;
+  }
+
   .advantage__wrapper {
-    padding: 55px 0 35px;
+    padding: 55px 0 31px;
   }
 
   .advantage__wrapper h2 {
     font-size: 24px;
     line-height: 150%;
+  }
+
+  .advantage__item--ship {
+    padding: 32px 16px 20px 20px;
+  }
+
+  .advantage__item--ship svg {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantage__item--ship h3 {
+    width: 200px;
+  }
+
+  .advantage__item--birdie h3 {
+    width: 200px;
+  }
+
+  .advantage__item--boat {
+    padding: 25px 36px 24px 21px;
+  }
+
+  .advantage__item--boat svg {
+    width: 38px;
+    height: 13px;
+  }
+
+  .advantage__item--boat h3 {
+    width: 200px;
   }
 
   .cruises {
@@ -1860,7 +1943,11 @@ button,
   }
 
   .form .form__inner {
-    padding: 35px 30px 40px;
+    padding: 32px 28px 44px;
+  }
+
+  .form h3 {
+    text-align: center;
   }
 
   .form__checkbox-input {
@@ -1868,7 +1955,7 @@ button,
   }
 
   .form__btn {
-    margin-top: 22px;
+    margin-top: 25px;
   }
 
   .contacts__wrapper {
@@ -1876,7 +1963,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 38px 0 70px;
+    padding: 29px 0 70px;
   }
 
   .contacts__maps {
@@ -1887,6 +1974,15 @@ button,
     order: 1;
   }
 
+  .contacts__text--phone {
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    margin-left: 0;
+    margin-top: -6px;
+    margin-bottom: 31px;
+  }
+
   .footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1895,7 +1991,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 40px 0;
+    padding: 40px 0 30px;
     row-gap: 20px;
   }
 
@@ -1911,6 +2007,12 @@ button,
 
   .footer__list {
     margin: 0;
+  }
+
+  .logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -1936,6 +2038,7 @@ button,
   }
 
   .header__inner p {
+    width: 230px;
     font-size: 16px;
     line-height: 140%;
   }

@@ -57,6 +57,7 @@
 
 .journey__img {
   background-color: rgb(91, 167, 229);
+  align-self: flex-start;
 
   @media (max-width: 600px) {
     margin-top: 15px;

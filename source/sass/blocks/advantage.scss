@@ -24,7 +24,7 @@
   }
 
   @media (max-width: 550px) {
-    padding: 55px 0 35px;
+    padding: 55px 0 31px;
   }
 }
 
@@ -53,6 +53,8 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  row-gap: 20px;
+  justify-content: center;
 
   @media (max-width: 425px) {
     flex-wrap: wrap;
@@ -64,6 +66,10 @@
   @media (max-width: 750px) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @media (min-width: 1366px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -115,31 +121,49 @@
   }
 }
 
-.advantage__item--ship svg  {
+.advantage__item--ship {
+  @media (max-width: 550px) {
+    padding: 32px 16px 20px 20px;
+  }
+}
+
+.advantage__item--ship svg {
   margin-top: -6px;
+
+  @media (max-width: 550px) {
+    width: 21px;
+    height: 26px;
+  }
 }
 
 .advantage__item--ship h3 {
   margin-top: 12px;
   margin-bottom: 0;
+
+  @media (max-width: 550px) {
+    width: 200px;
+  }
 }
 
 .advantage__item--ship p {
-
   @media (max-width: 950px) {
     margin-top: 9px;
   }
 }
 
-.advantage__item--birdie h3  {
+.advantage__item--birdie h3 {
   margin-bottom: 0;
+
+  @media (max-width: 550px) {
+    width: 200px;
+  }
 
   @media (max-width: 950px) {
     margin-top: 16px;
   }
 }
 
-.advantage__item--birdie p  {
+.advantage__item--birdie p {
   margin-top: 9px;
   padding-right: 15px;
 
@@ -149,8 +173,25 @@
   }
 }
 
+.advantage__item--boat {
+  @media (max-width: 550px) {
+    padding: 25px 36px 24px 21px;
+  }
+}
+
+.advantage__item--boat svg {
+  @media (max-width: 550px) {
+    width: 38px;
+    height: 13px;
+  }
+}
+
 .advantage__item--boat h3 {
   margin-bottom: 0;
+
+  @media (max-width: 550px) {
+    width: 200px;
+  }
 
   @media (max-width: 950px) {
     margin-top: 19px;

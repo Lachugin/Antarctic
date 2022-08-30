@@ -7,7 +7,7 @@
   max-width: 403px;
 
   @media (max-width: 550px) {
-    padding: 35px 30px 40px;
+    padding: 32px 28px 44px;
   }
 }
 
@@ -19,6 +19,10 @@
   line-height: 150%;
   color: $color-basic-white;
   text-align: start;
+
+  @media (max-width: 550px) {
+    text-align: center;
+  }
 }
 
 .form__inner .form__input {
@@ -78,6 +82,16 @@
   background: url("../img/svg/checkbox.svg") no-repeat;
 }
 
+.form__checkbox-input:focus + label::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #9b891b;
+}
+
 .form__btn {
   margin-top: 35px;
   width: 100%;
@@ -95,6 +109,6 @@
   padding: 11px 0 11px;
 
   @media (max-width: 550px) {
-    margin-top: 22px;
+    margin-top: 25px;
   }
 }

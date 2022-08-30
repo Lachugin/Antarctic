@@ -1,8 +1,9 @@
 .header {
   position: relative;
   min-height: 650px;
+  padding-bottom: 20px;
   background-color: #5ba7e5;
-  background-image: url("../img/header/desktop.png");
+  background-image: url("../img/header/desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,7 +14,7 @@
 
   @media (min-width: 1366px) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header/desktop@2.png");
+      background-image: url("../img/header/desktop@2.jpg");
     }
   }
 
@@ -83,8 +84,7 @@
 }
 
 .header__inner p {
-  margin: 0;
-  margin-top: 10px;
+  margin: 10px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -98,6 +98,7 @@
   }
 
   @media (max-width: 425px) {
+    width: 230px;
     font-size: 16px;
     line-height: 140%;
   }

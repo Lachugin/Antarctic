@@ -33,8 +33,9 @@
   display: grid;
   margin: 0;
   padding: 25px 15px;
-  gap: 30px;
+  gap: 28px;
   justify-content: center;
+  justify-items: center;
   grid-template-columns: repeat(4, 1fr);
 
   @media (max-width: 1201px) {
@@ -55,6 +56,10 @@
   min-width: 260px;
   max-width: 309px;
   grid-template-columns: 1fr;
+
+  @media (max-width: 767px) {
+    min-width: 270px;
+  }
 }
 
 .cruises__img {

@@ -4,6 +4,10 @@
   height: 38px;
   align-items: center;
 
+  @media (max-width: 550px) {
+    align-items: center;
+  }
+
   @media (max-width: $vp-1024) {
     align-items: flex-start;
     width: 38px;

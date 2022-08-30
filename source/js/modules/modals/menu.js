@@ -5,6 +5,12 @@ export const getMenu = () => {
   const headerBtn = document.getElementById('header-btn');
   const headerBody = document.getElementById('body-fixed');
 
+  headerBtn.removeAttribute('data-btn');
+  headerNav.removeAttribute('data-nav');
+  headerLogo.removeAttribute('data-logo');
+  headerList.removeAttribute('data-nav-list');
+  headerBody.removeAttribute('data-body');
+
   headerBtn.addEventListener('click', function (e) {
     e.preventDefault();
     if (!headerBtn.hasAttribute('data-btn')) {

@@ -15,13 +15,13 @@
 <body id="body-fixed">
 <header class="header">
   <div class="container">
-      <nav class="nav" id="header-nav">
-          <a class="logo" id="header-logo">
+      <nav class="nav" id="header-nav" data-nav="is-open">
+          <a class="logo" id="header-logo" data-logo="is-open">
             <svg width="70" height="38">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
-        <ul class="nav__list" id="header-list">
+        <ul class="nav__list" id="header-list" data-nav-list="is-open">
           <li class="nav__item">
             <a href="#advantage">Преимущества</a>
           </li>
@@ -35,7 +35,7 @@
             <a href="#contact">Контакты</a>
           </li>
         </ul>
-        <button class="header__btn" id="header-btn">
+        <button class="header__btn" id="header-btn" data-btn="is-open">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>

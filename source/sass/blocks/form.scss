@@ -3,7 +3,7 @@
   border: none;
   background: $color-basic-black;
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
-  padding: 45px 44px 50px;
+  padding: 45px 44px 48px;
   max-width: 403px;
 
   @media (max-width: 550px) {
@@ -39,6 +39,14 @@
   line-height: 150%;
 }
 
+.form__checkbox-box {
+  margin-top: 6px;
+
+  @media (max-width: 1200px) {
+    margin-top: 3px;
+  }
+}
+
 .form__checkbox-box label {
   font-weight: 400;
   font-size: 10px;
@@ -51,7 +59,11 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-left: 32px;
+  margin-left: 28px;
+
+  @media (max-width: 550px) {
+    width: 150px;
+  }
 }
 
 .form__checkbox-input {
@@ -65,21 +77,31 @@
 .form__checkbox-input + label::before {
   content: "";
   position: absolute;
-  left: -29px;
+  left: -25px;
   top: -4px;
   width: 20px;
   height: 20px;
   background-color: $color-basic-bg;
+
+  @media (max-width: 550px) {
+    left: -27px;
+    top: 0;
+  }
 }
 
 .form__checkbox-input:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
-  left: -25px;
+  left: -21px;
   width: 12px;
   height: 8px;
   background: url("../img/svg/checkbox.svg") no-repeat;
+
+  @media (max-width: 550px) {
+    top: 6px;
+    left: -23px;
+  }
 }
 
 .form__checkbox-input:focus + label::before {
@@ -93,7 +115,7 @@
 }
 
 .form__btn {
-  margin-top: 35px;
+  margin-top: 33px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -110,5 +132,9 @@
 
   @media (max-width: 550px) {
     margin-top: 25px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-top: 30px;
   }
 }

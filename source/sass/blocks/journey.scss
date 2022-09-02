@@ -59,6 +59,10 @@
   background-color: rgb(91, 167, 229);
   align-self: flex-start;
 
+  @media (max-width: 1200px) {
+    margin-top: 24px;
+  }
+
   @media (max-width: 600px) {
     margin-top: 15px;
   }
@@ -68,12 +72,12 @@
   width: 560px;
   height: 301px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     width: 290px;
     height: 186px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     width: 324px;
     height: 264px;
   }

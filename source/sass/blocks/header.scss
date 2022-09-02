@@ -119,10 +119,11 @@
 }
 
 [data-btn="is-open"] {
+  margin-right: 17px;
   border: none;
   background: url("../img/svg/close.svg") center (center/cover) no-repeat;
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   grid-column-start: 2;
   grid-row-start: 1;
   justify-self: end;

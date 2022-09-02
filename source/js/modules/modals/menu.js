@@ -27,4 +27,15 @@ export const getMenu = () => {
       headerBody.removeAttribute('data-body');
     }
   });
+
+  headerBody.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (headerBody.hasAttribute('data-body')) {
+      headerBtn.removeAttribute('data-btn');
+      headerNav.removeAttribute('data-nav');
+      headerLogo.removeAttribute('data-logo');
+      headerList.removeAttribute('data-nav-list');
+      headerBody.removeAttribute('data-body');
+    }
+  });
 };

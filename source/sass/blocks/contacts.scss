@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__maps {
+.contacts__maps .contacts__map {
   align-self: flex-start;
   background-color: #869c54;
   background-image: url("../img/img-map.jpg");
@@ -45,10 +45,6 @@
   margin-top: 0;
   max-width: 500px;
   order: 0;
-
-  @media (max-width: 1050px) {
-    max-width: 324px;
-  }
 }
 
 .contacts__info h2 {

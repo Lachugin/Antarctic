@@ -1211,6 +1211,16 @@ button,
   background-color: #f9fbfd;
 }
 
+.form__checkbox-input:focus + label::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #9b891b;
+}
+
 .form__checkbox-input:checked + label::after {
   content: "";
   position: absolute;
@@ -1219,16 +1229,6 @@ button,
   width: 12px;
   height: 8px;
   background: url("../img/svg/checkbox.svg") no-repeat;
-}
-
-.form__checkbox-input:focus + label::before {
-  content: "";
-  position: absolute;
-  left: -29px;
-  top: -4px;
-  width: 20px;
-  height: 20px;
-  border: solid 2px #9b891b;
 }
 
 .form__btn {
@@ -1255,13 +1255,13 @@ button,
 }
 
 .contacts__wrapper {
-  padding: 120px 0;
+  padding: 120px 0 112px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1496,7 +1496,7 @@ button,
   }
 
   .form__btn {
-    margin-top: 30px;
+    margin-top: 36px;
   }
 }
 
@@ -1539,9 +1539,9 @@ button,
   }
 
   .footer__list {
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
+    -webkit-column-gap: 23px;
+    -moz-column-gap: 23px;
+    column-gap: 23px;
   }
 
   .footer__item--fb svg {
@@ -1570,11 +1570,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 80px 60px;
+    padding: 85px 60px;
   }
 
   .booking__form {
-    margin-top: 60px;
+    margin-top: 53px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -1592,7 +1592,7 @@ button,
   }
 
   .contacts__wrapper {
-    padding: 100px 0;
+    padding: 100px 0 94px;
   }
 
   .contacts__maps .contacts__map {
@@ -1601,7 +1601,7 @@ button,
   }
 
   .contacts__info h2 {
-    margin: 28px 0;
+    margin: 20px 0;
   }
 
   .contacts__text {
@@ -1741,7 +1741,7 @@ button,
 
   .header__inner {
     padding-left: 0;
-    padding-top: 188px;
+    padding-top: 193px;
   }
 
   .header__inner h1 {
@@ -1755,7 +1755,7 @@ button,
   }
 
   .nav {
-    padding: 22px 0 13px;
+    padding: 18px 0 13px;
   }
 
   .journey {
@@ -2032,6 +2032,11 @@ button,
     top: 0;
   }
 
+  .form__checkbox-input:focus + label::before {
+    left: -27px;
+    top: 0;
+  }
+
   .form__checkbox-input:checked + label::after {
     top: 6px;
     left: -23px;
@@ -2046,7 +2051,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 29px 0 70px;
+    padding: 37px 0 70px;
+  }
+
+  .contacts__maps {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .contacts__maps .contacts__map {

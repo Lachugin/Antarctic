@@ -18,7 +18,7 @@
     min-height: 805px;
   }
 }
-// height: 760px;
+
 .booking__wrapper {
   margin: 0 auto;
   display: flex;
@@ -30,7 +30,7 @@
 
   @media (max-width: 1050px) {
     flex-direction: column;
-    padding: 80px 60px;
+    padding: 85px 60px;
   }
 
   @media (max-width: 550px) {
@@ -52,7 +52,7 @@
   }
 
   @media (max-width: 1050px) {
-    margin-top: 60px;
+    margin-top: 53px;
     align-self: center;
   }
 }

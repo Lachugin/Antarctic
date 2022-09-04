@@ -1,30 +1,35 @@
 export const getMenu = () => {
-  const headerNav = document.getElementById('header-nav');
-  const headerLogo = document.getElementById('header-logo');
-  const headerList = document.getElementById('header-list');
-  const headerBtn = document.getElementById('header-btn');
-  const headerBody = document.getElementById('body-fixed');
+  const headerNav = document.querySelector('[data-nav]');
+  const headerLogo = document.querySelector('[data-logo]');
+  const headerList = document.querySelector('[data-nav-list]');
+  const headerBtn = document.querySelector('[data-btn]');
+  const headerBody = document.querySelector('[data-body]');
+  const headerItems = document.querySelectorAll('[data-item]');
 
-  headerBtn.removeAttribute('data-btn');
-  headerNav.removeAttribute('data-nav');
-  headerLogo.removeAttribute('data-logo');
-  headerList.removeAttribute('data-nav-list');
-  headerBody.removeAttribute('data-body');
+  headerBtn.classList.remove('header__btn--active');
+  headerNav.classList.remove('nav--is-open-no-js');
+  headerNav.classList.remove('nav__active');
+  headerLogo.classList.remove('logo__active');
+  headerList.classList.remove('nav__list--active');
+  headerBody.classList.remove('body-fixed');
 
   headerBtn.addEventListener('click', function (e) {
     e.preventDefault();
-    if (!headerBtn.hasAttribute('data-btn')) {
-      headerBtn.setAttribute('data-btn', 'is-open');
-      headerNav.setAttribute('data-nav', 'is-open');
-      headerLogo.setAttribute('data-logo', 'is-open');
-      headerList.setAttribute('data-nav-list', 'is-open');
-      headerBody.setAttribute('data-body', 'is-open');
-    } else {
-      headerBtn.removeAttribute('data-btn');
-      headerNav.removeAttribute('data-nav');
-      headerLogo.removeAttribute('data-logo');
-      headerList.removeAttribute('data-nav-list');
-      headerBody.removeAttribute('data-body');
-    }
+    headerBtn.classList.toggle('header__btn--active');
+    headerNav.classList.toggle('nav__active');
+    headerLogo.classList.toggle('logo__active');
+    headerList.classList.toggle('nav__list--active');
+    headerBody.classList.toggle('body-fixed');
+  });
+
+  headerItems.forEach((el) => {
+    el.addEventListener('click', () => {
+      headerBtn.classList.remove('header__btn--active');
+      headerNav.classList.remove('nav--is-open-no-js');
+      headerNav.classList.remove('nav__active');
+      headerLogo.classList.remove('logo__active');
+      headerList.classList.remove('nav__list--active');
+      headerBody.classList.remove('body-fixed');
+    });
   });
 };

@@ -118,7 +118,7 @@
   }
 }
 
-[data-btn="is-open"] {
+.header__btn--active {
   margin-right: 17px;
   border: none;
   background: url("../img/svg/close.svg") center (center/cover) no-repeat;

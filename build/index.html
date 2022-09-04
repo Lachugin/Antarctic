@@ -12,30 +12,30 @@
   <link rel="preload" as="image" href="img/header/modile@2.webp" />
 </head>
 
-<body id="body-fixed">
+<body data-body>
 <header class="header">
   <div class="container">
-      <nav class="nav" id="header-nav" data-nav="is-open-no-js">
-          <a class="logo" id="header-logo" data-logo="is-open">
+      <nav class="nav nav--is-open-no-js" id="header-nav" data-nav>
+          <a class="logo logo__active" id="header-logo" data-logo>
             <svg width="70" height="38">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
-        <ul class="nav__list" id="header-list" data-nav-list="is-open">
-          <li class="nav__item">
+        <ul class="nav__list nav__list--active" id="header-list" data-nav-list>
+          <li class="nav__item" data-item>
             <a href="#advantage">Преимущества</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-item>
             <a href="#booking">Направления</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-item>
             <a href="#cruises">Ближайшие круизы</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-item>
             <a href="#contact">Контакты</a>
           </li>
         </ul>
-        <button class="header__btn" id="header-btn" data-btn="is-open">
+        <button class="header__btn header__btn--active" data-btn>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>

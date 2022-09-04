@@ -24,7 +24,7 @@
   }
 }
 
-[data-logo="is-open"] {
+.logo__active {
   @media (max-width: 768px) {
     padding-left: 15px;
     fill: $color-basic-black;
@@ -33,7 +33,7 @@
   }
 }
 
-[data-logo="is-open"] svg {
+.logo__active svg {
   @media (max-width: 768px) {
     fill: $color-basic-black;
     width: 42px;

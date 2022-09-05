@@ -1117,7 +1117,7 @@ button,
 .booking__form {
   -ms-flex-item-align: start;
   align-self: flex-start;
-  max-width: 403px;
+  max-width: 405px;
 }
 
 .booking__inner h2 {
@@ -1147,7 +1147,7 @@ button,
   background: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
-  padding: 45px 44px 48px;
+  padding: 46px 47px 49px 50px;
   max-width: 403px;
 }
 
@@ -1194,7 +1194,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-left: 28px;
+  margin-left: 23px;
 }
 
 .form__checkbox-input {
@@ -1204,20 +1204,20 @@ button,
 .form__checkbox-input + label::before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -23px;
   top: -4px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #f9fbfd;
 }
 
 .form__checkbox-input:focus + label::before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -23px;
   top: -4px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: solid 2px #9b891b;
 }
 
@@ -1225,8 +1225,8 @@ button,
   content: "";
   position: absolute;
   top: 2px;
-  left: -21px;
-  width: 12px;
+  left: -20px;
+  width: 11px;
   height: 8px;
   background: url("../img/svg/checkbox.svg") no-repeat;
 }

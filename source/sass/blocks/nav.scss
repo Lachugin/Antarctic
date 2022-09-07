@@ -70,7 +70,7 @@
   @media (max-width: 767px) {
     position: absolute;
     right: 0;
-    left: 35px;
+    width: 285px;
     display: grid;
     align-content: start;
     height: 100vh;
@@ -78,7 +78,7 @@
     overflow: auto;
     background-color: $color-basic-bg;
     grid-template-columns: 1fr 1fr;
-    z-index: 3;
+    z-index: 99;
   }
 }
 

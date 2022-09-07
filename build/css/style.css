@@ -715,8 +715,8 @@ button,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+  background: rgba(0, 43, 102, 0.5);
+  z-index: 1;
 }
 
 .nav {
@@ -876,7 +876,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  row-gap: 40px;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -887,6 +886,7 @@ button,
   box-sizing: border-box;
   padding: 35px 30px 25px;
   width: 360px;
+  margin-bottom: 40px;
   background: #f9fbfd;
 }
 
@@ -1448,6 +1448,17 @@ button,
   position: fixed;
 }
 
+.body-fixed:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 43, 102, 0.5);
+  z-index: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1464,6 +1475,7 @@ button,
 @media (max-width: 1300px) {
   .advantage__item {
     width: 206px;
+    margin-bottom: 28px;
     padding: 25px 16px 25px 20px;
   }
 }
@@ -1487,7 +1499,6 @@ button,
   }
 
   .advantage__list {
-    row-gap: 30px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1682,7 +1693,7 @@ button,
   }
 
   .cruises {
-    padding: 90px 0 53px;
+    padding: 94px 0 53px;
   }
 
   .cruises h2 {
@@ -1695,7 +1706,7 @@ button,
   .advantage__wrapper {
     -ms-flex-line-pack: center;
     align-content: center;
-    padding: 90px 0 100px;
+    padding: 90px 0 68px;
   }
 
   .advantage__wrapper h2 {
@@ -1781,7 +1792,7 @@ button,
   .logo__active {
     padding-left: 15px;
     fill: #011c40;
-    width: 42px;
+    width: 56px;
     height: 22px;
   }
 
@@ -1829,7 +1840,7 @@ button,
   .nav__active {
     position: absolute;
     right: 0;
-    left: 35px;
+    width: 285px;
     display: -ms-grid;
     display: grid;
     -ms-flex-line-pack: start;
@@ -1840,7 +1851,7 @@ button,
     background-color: #f9fbfd;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    z-index: 3;
+    z-index: 99;
   }
 
   .nav--is-open-no-js {
@@ -1947,6 +1958,7 @@ button,
 
   .advantage__item {
     width: 290px;
+    margin-bottom: 30px;
     min-height: 250px;
     padding: 25px 16px 25px 20px;
   }
@@ -2129,7 +2141,6 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 28px;
     -webkit-column-gap: 28px;
     -moz-column-gap: 28px;
     column-gap: 28px;
